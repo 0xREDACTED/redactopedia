@@ -11,10 +11,14 @@
             "id": "c32f7d15bd8a7f6a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "content/git/Git Commit History.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Git Commit History"
             }
           }
         ]
@@ -160,10 +164,12 @@
   },
   "active": "c32f7d15bd8a7f6a",
   "lastOpenFiles": [
+    "content/GitLab/GitLab CI.md",
+    "content/git/Git Commit History.md",
+    "content/git",
     "content/_images/parallel-matrix.png",
     "content/_images",
     "content/index.md",
-    "content/GitLab/GitLab CI.md",
     "content/GitLab",
     "content",
     "README.md",
@@ -175,7 +181,6 @@
     "node_modules/@citation-js/date/lib/output.js",
     "node_modules/@citation-js/date/lib/input.js",
     "node_modules/@citation-js/date/lib/index.js",
-    "node_modules/@citation-js/date/lib/formats",
     "node_modules/@esbuild/linux-x64/README.md",
     "node_modules/@asamuzakjp/dom-selector/README.md",
     "node_modules/@citation-js/core/README.md",

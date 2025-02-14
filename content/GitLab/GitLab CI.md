@@ -6,6 +6,7 @@ tags:
   - gitlab
   - grep
   - yaml
+  - git
 ---
 
 ## `grep` and capturing exit status in CI scripts
