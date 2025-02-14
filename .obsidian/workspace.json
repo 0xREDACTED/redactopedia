@@ -1,0 +1,209 @@
+{
+  "main": {
+    "id": "f58744112c19459d",
+    "type": "split",
+    "children": [
+      {
+        "id": "a916c47842b549c0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c32f7d15bd8a7f6a",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1161a8977f829c9f",
+    "type": "split",
+    "children": [
+      {
+        "id": "8b069aafc59b030f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9e28c5c34f5a9a61",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "351db925e44b4e65",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "fdd0d1ec7046342a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "cd84a8917bc7d937",
+    "type": "split",
+    "children": [
+      {
+        "id": "51af4373826671af",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "62f9c88fd2a986e7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "content/GitLab/GitLab CI.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for GitLab CI"
+            }
+          },
+          {
+            "id": "4e48cf621da36bdf",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "content/GitLab/GitLab CI.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from GitLab CI"
+            }
+          },
+          {
+            "id": "55bbc1cb2850aa07",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "1c32ee8fc1d21020",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "content/GitLab/GitLab CI.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of GitLab CI"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "c32f7d15bd8a7f6a",
+  "lastOpenFiles": [
+    "content/_images/parallel-matrix.png",
+    "content/_images",
+    "content/index.md",
+    "content/GitLab/GitLab CI.md",
+    "content/GitLab",
+    "content",
+    "README.md",
+    "node_modules/tsx/node_modules/@esbuild/linux-x64/README.md",
+    "node_modules/tsx/node_modules/@esbuild/linux-x64/package.json",
+    "node_modules/@citation-js/date/README.md",
+    "node_modules/@citation-js/date/package.json",
+    "node_modules/@citation-js/date/lib/formats/edtf.js",
+    "node_modules/@citation-js/date/lib/output.js",
+    "node_modules/@citation-js/date/lib/input.js",
+    "node_modules/@citation-js/date/lib/index.js",
+    "node_modules/@citation-js/date/lib/formats",
+    "node_modules/@esbuild/linux-x64/README.md",
+    "node_modules/@asamuzakjp/dom-selector/README.md",
+    "node_modules/@citation-js/core/README.md",
+    "node_modules/@citation-js/core/LICENSE.md",
+    "node_modules/gray-matter/node_modules/js-yaml/README.md",
+    "node_modules/gray-matter/node_modules/js-yaml/CHANGELOG.md",
+    "node_modules/@citation-js/name/README.md",
+    "node_modules/@citation-js/name/CHANGELOG.md",
+    "node_modules/cliui/node_modules/string-width/readme.md",
+    "node_modules/cliui/node_modules/emoji-regex/README.md",
+    "node_modules/cliui/node_modules/ansi-regex/readme.md",
+    "node_modules/cliui/node_modules/strip-ansi/readme.md",
+    "node_modules/fetch-ponyfill/node_modules/node-fetch/README.md",
+    "node_modules/fetch-ponyfill/node_modules/node-fetch/LICENSE.md",
+    "node_modules/cliui/node_modules/wrap-ansi/readme.md",
+    "node_modules/fetch-ponyfill/node_modules/webidl-conversions/LICENSE.md",
+    "node_modules/fetch-ponyfill/node_modules/webidl-conversions/README.md",
+    "node_modules/fetch-ponyfill/node_modules/whatwg-url/README.md",
+    "node_modules/gray-matter/node_modules/argparse/README.md",
+    "node_modules/gray-matter/node_modules/argparse/CHANGELOG.md",
+    "node_modules/cli-spinner/img/spinner.gif",
+    "node_modules/psl/browserstack-logo.svg",
+    "docs/images/dns records.png",
+    "docs/images/quartz-layout-tablet.png",
+    "docs/images/quartz-layout-mobile.png",
+    "docs/images/quartz transform pipeline.png",
+    "docs/images/github-init-repo-options.png",
+    "docs/images/giscus-repo.png",
+    "docs/images/giscus-discussion.png"
+  ]
+}

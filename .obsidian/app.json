@@ -1,0 +1,12 @@
+{
+  "userIgnoreFilters": [
+    "quartz/",
+    "node_modules/",
+    "docs/",
+    "CODE_OF_CONDUCT",
+    "README",
+    "templates/"
+  ],
+  "alwaysUpdateLinks": true,
+  "attachmentFolderPath": "content/_images"
+}
