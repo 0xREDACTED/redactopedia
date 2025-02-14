@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/GitLab/GitLab CI.md",
+                "file": "content/git/Git Commit History.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GitLab CI"
+              "title": "Git Commit History"
             }
           }
         ]
@@ -164,8 +164,8 @@
   },
   "active": "c32f7d15bd8a7f6a",
   "lastOpenFiles": [
-    "content/git/Git Commit History.md",
     "content/GitLab/GitLab CI.md",
+    "content/git/Git Commit History.md",
     "content/_images/parallel-matrix.png",
     "content/_images",
     "content/index.md",
