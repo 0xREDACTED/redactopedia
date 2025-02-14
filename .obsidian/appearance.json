@@ -1,3 +1,5 @@
 {
-  "cssTheme": "Primary"
+  "cssTheme": "Primary",
+  "accentColor": "",
+  "theme": "system"
 }

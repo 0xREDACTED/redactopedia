@@ -50,7 +50,7 @@ linux:build:
           - aws
           - azure
           - gcp
-      - DEPLOYMENT
+      - DEPLOYMENT:
           - kubernetes
           - service-mesh
 ```
