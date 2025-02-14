@@ -1,0 +1,12 @@
+.DS_Store
+.gitignore
+node_modules
+public
+prof
+tsconfig.tsbuildinfo
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.quartz-cache
+private/
+.replit
+replit.nix
