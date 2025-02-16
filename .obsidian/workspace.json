@@ -11,10 +11,14 @@
             "id": "c32f7d15bd8a7f6a",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "content/git/Git Commit History.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Git Commit History"
             }
           }
         ]
@@ -158,17 +162,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9e28c5c34f5a9a61",
+  "active": "c32f7d15bd8a7f6a",
   "lastOpenFiles": [
-    "red-stars.jpg",
-    "content/git/Git Commit History.md",
-    "content/index.md",
-    "content/GitLab/GitLab CI.md",
     "content/_images/parallel-matrix.png",
     "content/_images",
+    "content/index.md",
+    "content/git/Git Commit History.md",
     "content/git",
+    "content/GitLab/GitLab CI.md",
     "content/GitLab",
     "content",
+    "red-stars.jpg",
     "README.md",
     "node_modules/tsx/node_modules/@esbuild/linux-x64/README.md",
     "node_modules/tsx/node_modules/@esbuild/linux-x64/package.json",
