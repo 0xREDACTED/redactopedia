@@ -4,5 +4,5 @@
   "encore-settings@@encore-translucency": true,
   "encore-settings@@encore-translucency-background": "encore-bg-image",
   "encore-settings@@encore-translucency-strength": 0.25,
-  "encore-settings@@encore-translucency-image": "url(\"red-stars.jpg\")"
+  "encore-settings@@encore-translucency-image": "url(\"https://raw.githubusercontent.com/0xREDACTED/redactopedia/refs/heads/v4/.encore-theme-images/red-stars.jpg\")"
 }
