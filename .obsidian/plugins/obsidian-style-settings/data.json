@@ -1,0 +1,8 @@
+{
+  "encore-settings@@theme-dark": "encore-theme-dark-mercury",
+  "encore-settings@@theme-light": "encore-theme-light",
+  "encore-settings@@encore-translucency": true,
+  "encore-settings@@encore-translucency-background": "encore-bg-image",
+  "encore-settings@@encore-translucency-strength": 0.25,
+  "encore-settings@@encore-translucency-image": "url(\"red-stars.jpg\")"
+}
