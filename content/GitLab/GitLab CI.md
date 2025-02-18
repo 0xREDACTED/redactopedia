@@ -82,6 +82,7 @@ linux:build:
 ```
 This will then generate the following jobs that run in parallel:
 ![[parallel-matrix.png|500]]
+
 The jobs will then set the environment variables respectively. So for the first job the output will be `Hello from kubernetes on aws!` 
 
 Now, what if we wanted to *dynamically* define the elements within `CLOUD` or `DEPLOYMENT`. One might think that you could pass set it to an environment or input variable and have it expand. E.g:

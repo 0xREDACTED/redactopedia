@@ -11,10 +11,14 @@
             "id": "c32f7d15bd8a7f6a",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "content/GitLab/GitLab CI.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "GitLab CI"
             }
           }
         ]
@@ -138,12 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "content/GitLab/GitLab CI.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of GitLab CI"
             }
           }
         ],
@@ -164,12 +169,12 @@
   },
   "active": "c32f7d15bd8a7f6a",
   "lastOpenFiles": [
-    "content/GitLab/GitLab CI.md",
-    "content/git/Git Commit History.md",
-    "content/index.md",
     "content/_images/parallel-matrix.png",
     "content/_images",
+    "content/index.md",
+    "content/GitLab/GitLab CI.md",
     "content/GitLab",
+    "content/git/Git Commit History.md",
     "content/git",
     "content",
     "node_modules/yargs/lib/platform-shims/browser.mjs",
