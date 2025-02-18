@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/GitLab/GitLab CI.md",
+                "file": "content/git/Git Commit History.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GitLab CI"
+              "title": "Git Commit History"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/GitLab/GitLab CI.md",
+                "file": "content/git/Git Commit History.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of GitLab CI"
+              "title": "Outline of Git Commit History"
             }
           }
         ],
