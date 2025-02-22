@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/notes/tools-and-platforms/CICD/GitLab CI.md",
+                "file": "content/notes/tools-and-platforms/containerisation/Docker/placeholder.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GitLab CI"
+              "title": "placeholder"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/notes/tools-and-platforms/CICD/GitLab CI.md",
+                "file": "content/notes/tools-and-platforms/containerisation/Docker/placeholder.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of GitLab CI"
+              "title": "Outline of placeholder"
             }
           }
         ],
@@ -169,20 +169,25 @@
   },
   "active": "f46002ce978e738e",
   "lastOpenFiles": [
-    "content/notes/tools-and-platforms/CLI-tools/git/Git Commit History.md",
-    "content/notes/tools-and-platforms/CICD/GitLab CI.md",
-    "content/notes/tools-and-platforms/Untitled",
-    "content/notes/tools-and-platforms/Containerisation/Docker",
-    "content/notes/tools-and-platforms/Containerisation/Kubernetes",
-    "content/notes/programming/C++",
-    "content/notes/tools-and-platforms/Containerisation",
-    "content/notes/tools-and-platforms/CICD",
-    "content/notes/tools-and-platforms/CLI-tools",
-    "content/notes/programming",
-    "content/notes/tools-and-platforms",
-    "content/images/parallel-matrix.png",
-    "content/notes/tools-and-platforms/CICD/GitLab",
+    "content/notes/tools-and-platforms/containerisation/Kubernetes/placeholder.md",
+    "content/notes/tools-and-platforms/containerisation/Docker/placeholder.md",
+    "content/notes/programming/systems-programming/linking/Static vs Dynamic Linking.md",
+    "content/notes/tools-and-platforms/ci-cd/GitLab CI.md",
+    "content/notes/tools-and-platforms/cli-tools/git/Git Commit History.md",
+    "content/notes/programming/languages/C++/placeholder.md",
+    "content/notes/programming/architecture/placeholder.md",
     "content/index.md",
+    "content/notes/operating-systems",
+    "content/notes/programming/systems-programming/linking",
+    "content/notes/programming/systems-programming",
+    "content/notes/programming/architecture",
+    "content/notes/programming/languages",
+    "content/images/parallel-matrix.png",
+    "content/notes/tools-and-platforms/containerisation/Kubernetes",
+    "content/notes/tools-and-platforms/containerisation/Docker",
+    "content/notes/tools-and-platforms/cli-tools/git",
+    "content/notes/tools-and-platforms/containerisation",
+    "content/notes/tools-and-platforms/cli-tools",
     "quartz/static/32993852.jpg",
     "quartz/static/icon.png",
     "quartz/static/1f575_flat.png",
@@ -204,10 +209,6 @@
     "node_modules/rehype-autolink-headings/readme.md",
     "node_modules/reading-time/README.md",
     "node_modules/range-parser/README.md",
-    "node_modules/range-parser/HISTORY.md",
-    "node_modules/queue-microtask/README.md",
-    "node_modules/querystringify/README.md",
-    "node_modules/punycode/README.md",
     "node_modules/psl/browserstack-logo.svg",
     "node_modules/cli-spinner/img/spinner.gif",
     "red-stars.jpg",
