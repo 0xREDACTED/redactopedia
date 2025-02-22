@@ -1,5 +1,9 @@
 {
   "cssTheme": "Encore",
   "accentColor": "",
-  "theme": "obsidian"
+  "theme": "obsidian",
+  "enabledCssSnippets": [
+    "mermaid-fit-page",
+    "mermaid-resizable"
+  ]
 }
