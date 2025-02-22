@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/notes/operating-systems/placeholder.md",
+                "file": "content/notes/programming/systems-programming/linking/Static vs Dynamic Linking.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "placeholder"
+              "title": "Static vs Dynamic Linking"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/notes/operating-systems/placeholder.md",
+                "file": "content/notes/programming/systems-programming/linking/Static vs Dynamic Linking.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of placeholder"
+              "title": "Outline of Static vs Dynamic Linking"
             }
           }
         ],
@@ -169,12 +169,11 @@
   },
   "active": "f46002ce978e738e",
   "lastOpenFiles": [
-    "content/notes/operating-systems/placeholder.md",
-    "content/notes/tools-and-platforms/containerisation/Kubernetes/placeholder.md",
-    "content/notes/tools-and-platforms/cli-tools/git/Git Commit History.md",
-    "content/notes/tools-and-platforms/containerisation/Docker/placeholder.md",
-    "content/notes/programming/systems-programming/linking/Static vs Dynamic Linking.md",
     "content/notes/programming/languages/C++/placeholder.md",
+    "content/notes/tools-and-platforms/containerisation/Kubernetes/placeholder.md",
+    "content/notes/tools-and-platforms/containerisation/Docker/placeholder.md",
+    "content/notes/tools-and-platforms/cli-tools/git/Git Commit History.md",
+    "content/notes/programming/systems-programming/linking/Static vs Dynamic Linking.md",
     "content/notes/tools-and-platforms/containerisation/Kubernetes",
     "content/notes/tools-and-platforms/containerisation/Docker",
     "content/notes/tools-and-platforms/cli-tools/git",
@@ -187,8 +186,9 @@
     "content/notes/tools-and-platforms/ci-cd",
     "content/notes/programming/systems-programming",
     "content/notes/programming/languages",
-    "content/index.md",
+    "content/notes/operating-systems/placeholder.md",
     "content/images/parallel-matrix.png",
+    "content/index.md",
     "quartz/static/32993852.jpg",
     "quartz/static/icon.png",
     "quartz/static/1f575_flat.png",
@@ -208,7 +208,6 @@
     "node_modules/rehype-pretty-code/README.md",
     "node_modules/rehype-parse/readme.md",
     "node_modules/rehype-autolink-headings/readme.md",
-    "node_modules/reading-time/README.md",
     "node_modules/psl/browserstack-logo.svg",
     "node_modules/cli-spinner/img/spinner.gif",
     "red-stars.jpg",
