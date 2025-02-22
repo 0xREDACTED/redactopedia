@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/notes/GitLab/GitLab CI.md",
+                "file": "content/notes/tools-and-platforms/CICD/GitLab CI.md",
                 "mode": "source",
                 "source": false
               },
@@ -142,16 +142,17 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "content/notes/tools-and-platforms/CICD/GitLab CI.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of GitLab CI"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -166,23 +167,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9e28c5c34f5a9a61",
+  "active": "f46002ce978e738e",
   "lastOpenFiles": [
-    "content/notes/git/Git Commit History.md",
+    "content/notes/tools-and-platforms/CLI-tools/git/Git Commit History.md",
+    "content/notes/tools-and-platforms/CICD/GitLab CI.md",
+    "content/notes/tools-and-platforms/Untitled",
+    "content/notes/tools-and-platforms/Containerisation/Docker",
+    "content/notes/tools-and-platforms/Containerisation/Kubernetes",
+    "content/notes/programming/C++",
+    "content/notes/tools-and-platforms/Containerisation",
+    "content/notes/tools-and-platforms/CICD",
+    "content/notes/tools-and-platforms/CLI-tools",
+    "content/notes/programming",
+    "content/notes/tools-and-platforms",
     "content/images/parallel-matrix.png",
+    "content/notes/tools-and-platforms/CICD/GitLab",
     "content/index.md",
-    "content/notes",
     "quartz/static/32993852.jpg",
-    "quartz/static/32993852.jpg.crdownload",
-    "content/images",
-    "content/notes/GitLab/GitLab CI.md",
-    "content/notes/GitLab",
-    "content/notes/git",
-    "content",
-    "node_modules/serve-handler/node_modules/brace-expansion/index.js",
-    "node_modules/serve-handler/node_modules/minimatch/minimatch.js",
-    "node_modules/path-scurry/dist/esm/package.json",
-    "node_modules/cliui/index.mjs",
     "quartz/static/icon.png",
     "quartz/static/1f575_flat.png",
     "node_modules/trough/readme.md",

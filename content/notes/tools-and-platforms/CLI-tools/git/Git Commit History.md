@@ -2,6 +2,7 @@
 title: Useful Commands
 tags:
   - git
+  - CLI
 ---
 ## Replacing Author in commit history
 
