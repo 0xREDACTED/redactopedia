@@ -2,7 +2,7 @@
 
 This repo contains the code for the redactopedia, a collection of knowledge, architectural preferences, as well tips and tricks for common pitfalls that I have accumulated and built throughout my software career :). 
 
-The redactopedia is an Obsidian project, which is then converted into a static site via Quartz 4.0 and hosted at [REDACTED]
+The redactopedia is an Obsidian project, which is then converted into a static site via Quartz 4.0 and hosted at https://0xredacted.github.io/redactopedia/
 
 ## Developer guide 
 
