@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Systems Programming/Language Processors/Language Specific Processes.md",
+                "file": "content/Systems Programming/Language Processors/Language Processors.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Language Specific Processes"
+              "title": "Language Processors"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/Systems Programming/Language Processors/Language Specific Processes.md",
+                "file": "content/Systems Programming/Language Processors/Language Processors.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Language Specific Processes"
+              "title": "Outline of Language Processors"
             }
           }
         ],
@@ -169,20 +169,25 @@
   },
   "active": "f46002ce978e738e",
   "lastOpenFiles": [
+    "content/Systems Programming/Language Processors/Language Specific Processes.md",
     "content/Systems Programming/Language Processors/Tooling/Parsers & Lexers.md",
-    "content/Systems Programming/Language Processors/Bytecode VMs/Runtime Environments.md",
-    "content/Systems Programming/Language Processors/Tooling",
-    "content/Systems Programming/Language Processors/Bytecode VMs/JIT Compilation.md",
-    "content/Systems Programming/Language Processors/Bytecode VMs/Bytecode Design.md",
-    "content/Systems Programming/Language Processors/Build Chain/Linkers.md",
-    "content/Systems Programming/Language Processors/Bytecode VMs",
-    "content/Systems Programming/Language Processors/Build Chain/Assemblers.md",
-    "content/Systems Programming/Language Processors/Build Chain/Preprocessors.md",
-    "content/Systems Programming/Language Processors/Core Processors/Compilers.md",
-    "content/Systems Programming/Language Processors/Build Chain",
-    "content/Systems Programming/Language Processors/Core Processors/Interpreters.md",
+    "content/Systems Programming/Language Processors/Tooling/IR Formats.md",
     "content/Systems Programming/Language Processors/Core Processors/JIT Compilers.md",
+    "content/Systems Programming/Language Processors/Build Chain/Assemblers.md",
+    "content/Systems Programming/Language Processors/Build Chain/Linkers.md",
+    "content/Systems Programming/Language Processors/Build Chain/Preprocessors.md",
+    "content/Systems Programming/Language Processors/Bytecode VMs/Bytecode Design.md",
+    "content/Systems Programming/Language Processors/Bytecode VMs/Runtime Environments.md",
+    "content/Systems Programming/Language Processors/Core Processors/Compilers.md",
+    "content/Systems Programming/Language Processors/Core Processors/Interpreters.md",
+    "content/Systems Programming/Language Processors/Language Processors.md",
     "content/Systems Programming/Language Processors/Core Processors/Transpilers.md",
+    "content/Systems Programming/Operating Systems/placeholder.md",
+    "content/Systems Programming/Language Processors/Bytecode VMs/JIT Compilation.md",
+    "content/Tools & Platforms/Containerisation/Docker/placeholder.md",
+    "content/Systems Programming/Language Processors/Tooling",
+    "content/Systems Programming/Language Processors/Bytecode VMs",
+    "content/Systems Programming/Language Processors/Build Chain",
     "content/Systems Programming/Language Processors/General Concepts/Compiler.md",
     "content/Systems Programming/Language Processors/General Concepts/Assembler.md",
     "content/Systems Programming/Language Processors/Core Processors",
@@ -191,15 +196,10 @@
     "content/Systems Programming/Language Processors/General Concepts/Bytecode VM.md",
     "content/Programming/Languages/C++/Compilation Process.md",
     "content/Systems Programming/Language Processors/General Concepts/Linker.md",
-    "content/Systems Programming/Language Processors/Language Specific Processes.md",
-    "content/Systems Programming/Language Processors/Overview.md",
     "content/Systems Programming/Language Processors/General Concepts",
     "content/Systems Programming/Linking.md",
     "content/Systems Programming/Language Processors/Linking.md",
     "content/Systems Programming/linking/Static vs Dynamic Linking.md",
-    "content/Tools & Platforms/CLI Tools/git/Git Commit History.md",
-    "content/Systems Programming/Language Processors/General Concepts/Compilers.md",
-    "content/Systems Programming/Language Processors/General Concepts/Interpreters.md",
     "content/Systems Programming/Compilers & Interpreters/Interpreters",
     "content/Systems Programming/Compilers & Interpreters/JIT Compilers",
     "content/Systems Programming/Compilers & Interpreters/Compilers",
