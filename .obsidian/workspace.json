@@ -11,14 +11,10 @@
             "id": "f46002ce978e738e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/Systems Programming/Language Processors/Language Specific Implementations.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Language Specific Implementations"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -142,13 +138,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/Systems Programming/Language Processors/Language Specific Implementations.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Language Specific Implementations"
+              "title": "Outline"
             }
           }
         ],
@@ -169,39 +164,39 @@
   },
   "active": "f46002ce978e738e",
   "lastOpenFiles": [
+    "content/Systems Programming/Language Processors/Language Processors.md",
     "content/Systems Programming/Language Processors/Pieces of the puzzle/Pre-processors.md",
-    "content/Systems Programming/Language Processors/Pieces of the puzzle/Assemblers.md",
-    "content/Systems Programming/Language Processors/Pieces of the puzzle/Bytecode & VMs.md",
-    "content/Systems Programming/Language Processors/Pieces of the puzzle/Interpreters.md",
-    "content/Systems Programming/Language Processors/Pieces of the puzzle/JIT Compilers.md",
     "content/Systems Programming/Language Processors/Pieces of the puzzle/Linkers.md",
+    "content/Systems Programming/Language Processors/Language Specific Implementations.md",
     "content/Systems Programming/Language Processors/Pieces of the puzzle/Compilers.md",
     "content/Programming/Languages/C++/Compilation Process.md",
-    "content/Tools & Platforms/Containerisation/Kubernetes/placeholder.md",
-    "content/Tools & Platforms/Containerisation/Docker/placeholder.md",
-    "content/Systems Programming/Operating Systems/placeholder.md",
-    "content/Tools & Platforms/CLI Tools/git/Git Commit History.md",
-    "content/Tools & Platforms/CICD/GitLab CI.md",
-    "content/Systems Programming/Language Processors/Language Specific Implementations.md",
-    "content/index.md",
-    "Untitled.canvas",
-    "content/Systems Programming/Language Processors/Implementations",
-    "content/Systems Programming/Language Processors/Bytecode VMs/Bytecode Design.md",
-    "Preprocessor.md",
-    "content/Systems Programming/Language Processors/Bytecode VMs/Runtime Environments.md",
-    "content/Systems Programming/Language Processors/Language Processors.md",
-    "content/Systems Programming/Language Processors/Pieces of the puzzle",
-    "content/Systems Programming/Language Processors/Tooling/IR Formats.md",
-    "content/Systems Programming/Language Processors/Tooling/Parsers & Lexers.md",
     "content/Programming/architecture/placeholder.md",
     "content/Programming/Languages/C++",
     "content/Programming/architecture",
     "content/Programming/Languages",
     "content/Programming",
-    "content/Systems Programming/Language Processors/Tooling",
-    "content/Systems Programming/Language Processors/Core Processors",
-    "content/Systems Programming/Language Processors/Bytecode VMs",
-    "content/Systems Programming/Language Processors/Build Chain",
+    "content/index.md",
+    "content/Systems Programming/Language Processors/Pieces of the puzzle/JIT Compilers.md",
+    "content/Systems Programming/Language Processors/Pieces of the puzzle/Interpreters.md",
+    "content/Systems Programming/Language Processors/Pieces of the puzzle/Bytecode & VMs.md",
+    "content/Systems Programming/Language Processors/Pieces of the puzzle/Assemblers.md",
+    "content/Systems Programming/Operating Systems/placeholder.md",
+    "content/Systems Programming/Language Processors/Pieces of the puzzle",
+    "content/Systems Programming/Operating Systems",
+    "content/Systems Programming/Language Processors",
+    "content/Systems Programming",
+    "content/Tools & Platforms/CLI Tools/git/Git Commit History.md",
+    "content/Tools & Platforms/CLI Tools/git",
+    "content/Tools & Platforms/CLI Tools",
+    "content/Tools & Platforms/CICD/GitLab CI.md",
+    "content/Tools & Platforms/Containerisation/Kubernetes/placeholder.md",
+    "content/Tools & Platforms/Containerisation/Docker/placeholder.md",
+    "Untitled.canvas",
+    "content/Systems Programming/Language Processors/Bytecode VMs/Bytecode Design.md",
+    "Preprocessor.md",
+    "content/Systems Programming/Language Processors/Bytecode VMs/Runtime Environments.md",
+    "content/Systems Programming/Language Processors/Tooling/IR Formats.md",
+    "content/Systems Programming/Language Processors/Tooling/Parsers & Lexers.md",
     "content/Systems Programming/Language Processors/Core Processors/Transpilers.md",
     "content/Systems Programming/Language Processors/Bytecode VMs/JIT Compilation.md",
     "content/Systems Programming/Language Processors/General Concepts/Compiler.md",
