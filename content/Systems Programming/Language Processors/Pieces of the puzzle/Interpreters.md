@@ -1,6 +1,5 @@
 ---
-Compilation Process: 
+title: Interpreters
 tags:
-  - cpp
   - language-processors
 ---

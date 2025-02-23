@@ -1,6 +1,5 @@
 ---
-Compilation Process: 
+title: Pre-processors
 tags:
-  - cpp
   - language-processors
 ---
