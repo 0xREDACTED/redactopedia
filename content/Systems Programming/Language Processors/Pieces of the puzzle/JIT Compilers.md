@@ -1,6 +1,5 @@
 ---
-Compilation Process: 
+title: JIT Compilers
 tags:
-  - cpp
   - language-processors
 ---

@@ -1,6 +1,5 @@
 ---
-Compilation Process: 
+title: Linkers
 tags:
-  - cpp
   - language-processors
 ---
