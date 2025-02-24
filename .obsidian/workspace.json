@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Systems Programming/Language Processors/Language Processors.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Language Processors"
+              "title": "README"
             }
           }
         ]
@@ -53,8 +53,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:systems-programming",
-                "matchingCase": true,
+                "query": "",
+                "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/Systems Programming/Language Processors/Language Processors.md",
+                "file": "README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Language Processors"
+              "title": "Outline of README"
             }
           }
         ],
@@ -169,21 +169,24 @@
   },
   "active": "0458c55968c8deb4",
   "lastOpenFiles": [
+    "content/index.md",
+    "content/Systems Programming/Language Processors/Pieces of the puzzle/Pre-processors.md",
+    "content/Systems Programming/Language Processors/Pieces of the puzzle/Assemblers.md",
+    "README.md",
     "content/Systems Programming/Language Processors/Language Processors.md",
+    "content/Tools & Platforms/CICD/GitLab CI.md",
     "content/Programming/Languages/C++/Compilation Process.md",
+    "Untitled.canvas",
+    "content/Systems Programming/Language Processors/Pieces of the puzzle/Linkers.md",
+    "content/Systems Programming/Language Processors/Pieces of the puzzle/Interpreters.md",
     "content/Programming/architecture/placeholder.md",
     "content/Programming/Languages/C++",
     "content/Programming/architecture",
     "content/Programming/Languages",
     "content/Programming",
-    "content/index.md",
-    "content/Systems Programming/Language Processors/Pieces of the puzzle/Pre-processors.md",
-    "content/Systems Programming/Language Processors/Pieces of the puzzle/Linkers.md",
     "content/Systems Programming/Language Processors/Pieces of the puzzle/JIT Compilers.md",
-    "content/Systems Programming/Language Processors/Pieces of the puzzle/Interpreters.md",
-    "content/Systems Programming/Language Processors/Pieces of the puzzle/Bytecode & VMs.md",
     "content/Systems Programming/Language Processors/Pieces of the puzzle/Compilers.md",
-    "content/Systems Programming/Language Processors/Pieces of the puzzle/Assemblers.md",
+    "content/Systems Programming/Language Processors/Pieces of the puzzle/Bytecode & VMs.md",
     "content/Systems Programming/Operating Systems/placeholder.md",
     "content/Systems Programming/Language Processors/Pieces of the puzzle",
     "content/Systems Programming/Operating Systems",
@@ -192,11 +195,9 @@
     "content/Tools & Platforms/CLI Tools/git/Git Commit History.md",
     "content/Tools & Platforms/CLI Tools/git",
     "content/Tools & Platforms/CLI Tools",
-    "content/Tools & Platforms/CICD/GitLab CI.md",
     "content/Tools & Platforms/Containerisation/Kubernetes/placeholder.md",
     "content/Tools & Platforms/Containerisation/Docker/placeholder.md",
     "content/Systems Programming/Language Processors/Language Specific Implementations.md",
-    "Untitled.canvas",
     "content/Systems Programming/Language Processors/Bytecode VMs/Bytecode Design.md",
     "Preprocessor.md",
     "content/Systems Programming/Language Processors/Bytecode VMs/Runtime Environments.md",
@@ -204,7 +205,6 @@
     "content/Systems Programming/Language Processors/Tooling/Parsers & Lexers.md",
     "content/Systems Programming/Language Processors/Core Processors/Transpilers.md",
     "content/Systems Programming/Language Processors/Bytecode VMs/JIT Compilation.md",
-    "content/Systems Programming/Language Processors/General Concepts/Compiler.md",
     "_images/parallel-matrix.png",
     "quartz/static/32993852.jpg",
     "quartz/static/icon.png",
