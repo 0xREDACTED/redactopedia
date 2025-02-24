@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ee8ce493335852e2",
+        "id": "3de9f37702c0cc4e",
         "type": "tabs",
         "children": [
           {
-            "id": "f46002ce978e738e",
+            "id": "0458c55968c8deb4",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -167,25 +167,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f46002ce978e738e",
+  "active": "0458c55968c8deb4",
   "lastOpenFiles": [
-    "content/index.md",
+    "content/Systems Programming/Language Processors/Language Processors.md",
     "content/Programming/Languages/C++/Compilation Process.md",
     "content/Programming/architecture/placeholder.md",
     "content/Programming/Languages/C++",
     "content/Programming/architecture",
     "content/Programming/Languages",
     "content/Programming",
+    "content/index.md",
     "content/Systems Programming/Language Processors/Pieces of the puzzle/Pre-processors.md",
     "content/Systems Programming/Language Processors/Pieces of the puzzle/Linkers.md",
     "content/Systems Programming/Language Processors/Pieces of the puzzle/JIT Compilers.md",
     "content/Systems Programming/Language Processors/Pieces of the puzzle/Interpreters.md",
-    "content/Systems Programming/Language Processors/Pieces of the puzzle/Compilers.md",
     "content/Systems Programming/Language Processors/Pieces of the puzzle/Bytecode & VMs.md",
+    "content/Systems Programming/Language Processors/Pieces of the puzzle/Compilers.md",
     "content/Systems Programming/Language Processors/Pieces of the puzzle/Assemblers.md",
     "content/Systems Programming/Operating Systems/placeholder.md",
     "content/Systems Programming/Language Processors/Pieces of the puzzle",
-    "content/Systems Programming/Language Processors/Language Processors.md",
     "content/Systems Programming/Operating Systems",
     "content/Systems Programming/Language Processors",
     "content/Systems Programming",
