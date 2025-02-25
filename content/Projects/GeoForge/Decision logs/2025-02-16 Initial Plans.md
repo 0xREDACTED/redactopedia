@@ -14,10 +14,12 @@ The program consisted of a simple UI that took the size of the model in metres (
 
 For example, this is the full output:
 
-![[projects-geoforge_honours-project-app-output-1.png|500]]
+![[honours-project-app-output-1.png|500]]
+
 This is the output filtered by copper:
 
-![[projects-geoforge_honours-project-app-output-2.png|500]]
+![[honours-project-app-output-2.png|500]]
+
 To generate models, the program actually used a few pre-defined 3D meshes (.stl files) for each deposit type. The program would then (with some other steps in-between):
 
 - load a random one of the meshes for the deposit type

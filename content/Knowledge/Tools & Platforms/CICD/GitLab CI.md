@@ -81,7 +81,7 @@ linux:build:
           - service-mesh
 ```
 This will then generate the following jobs that run in parallel:
-![[knowledge-tools-and-platforms-cicd_parallel-matrix.png|500]]
+![[parallel-matrix.png|500]]
 
 The jobs will then set the environment variables respectively. So for the first job the output will be `Hello from kubernetes on aws!` 
 
