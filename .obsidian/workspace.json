@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Projects/GeoForge/Decision logs/2025-02-16 Initial Plans.md",
+                "file": "content/Knowledge/Tools & Platforms/CICD/GitLab CI.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-02-16 Initial Plans"
+              "title": "GitLab CI"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/Projects/GeoForge/Decision logs/2025-02-16 Initial Plans.md",
+                "file": "content/Knowledge/Tools & Platforms/CICD/GitLab CI.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-02-16 Initial Plans"
+              "title": "Outline of GitLab CI"
             }
           }
         ],
@@ -169,36 +169,36 @@
   },
   "active": "0458c55968c8deb4",
   "lastOpenFiles": [
+    "_images/knowledge-tools-and-platforms-cicd_parallel-matrix.png",
+    "_images/projects-geoforge_honours-project-app-output-2.png",
+    "_images/projects-geoforge_honours-project-app-output-1.png",
+    "content/Projects/GeoForge/Decision logs/2025-02-16 Initial Plans.md",
     "content/index.md",
-    "content/Knowledge/Tools & Platforms/CICD/GitLab CI.md",
+    "content/Knowledge/Programming/Architecture/placeholder.md",
+    "content/Knowledge/Programming/Architecture",
     "content/Knowledge/Tools & Platforms/Containerisation/Kubernetes/placeholder.md",
     "content/Knowledge/Tools & Platforms/Containerisation/Docker/placeholder.md",
     "content/Knowledge/Tools & Platforms/CLI Tools/git/Git Commit History.md",
     "content/Knowledge/Systems Programming/Language Processors/Pieces of the puzzle/Pre-processors.md",
     "content/Knowledge/Systems Programming/Language Processors/Pieces of the puzzle/Linkers.md",
     "content/Knowledge/Systems Programming/Language Processors/Pieces of the puzzle/JIT Compilers.md",
-    "content/Knowledge/Systems Programming/Language Processors/Pieces of the puzzle/Compilers.md",
     "content/Knowledge/Systems Programming/Language Processors/Pieces of the puzzle/Interpreters.md",
+    "content/Knowledge/Systems Programming/Language Processors/Pieces of the puzzle/Compilers.md",
     "content/Knowledge/Systems Programming/Language Processors/Pieces of the puzzle/Bytecode & VMs.md",
     "content/Knowledge/Systems Programming/Language Processors/Pieces of the puzzle/Assemblers.md",
     "content/Knowledge/Programming/Languages/C++/Compilation Process.md",
     "content/Knowledge/Tools & Platforms/Containerisation/Kubernetes",
     "content/Knowledge/Tools & Platforms/Containerisation/Docker",
     "content/Knowledge/Tools & Platforms/CLI Tools/git",
+    "content/Knowledge/Tools & Platforms/CICD/GitLab CI.md",
     "content/Knowledge/Systems Programming/Operating Systems/placeholder.md",
     "content/Knowledge/Systems Programming/Language Processors/Pieces of the puzzle",
     "content/Knowledge/Systems Programming/Language Processors/Language Processors.md",
     "content/Knowledge/Programming/Languages/C++",
-    "content/Knowledge/Programming/Architecture/placeholder.md",
     "content/Knowledge/Tools & Platforms/Containerisation",
     "content/Knowledge/Tools & Platforms/CLI Tools",
     "content/Knowledge/Tools & Platforms/CICD",
     "content/Knowledge/Systems Programming/Operating Systems",
-    "content/Knowledge/Systems Programming/Language Processors",
-    "content/Projects/GeoForge/Decision logs/2025-02-16 Initial Plans.md",
-    "_images/Projects/GeoForge/Decision logs/honours-project-app-output-2.png",
-    "_images/Projects/GeoForge/Decision logs/honours-project-app-output-1.png",
-    "_images/Knowledge/Tools & Platforms/CICD/parallel-matrix.png",
     "README.md",
     "Untitled.canvas",
     "content/Programming/architecture/placeholder.md",
