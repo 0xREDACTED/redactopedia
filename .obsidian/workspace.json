@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "content/Projects/GeoForge/Decision logs/2025-02-16 Initial Plans.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
@@ -188,8 +188,8 @@
     "content/Knowledge/Systems Programming/Operating Systems/placeholder.md",
     "content/Knowledge/Systems Programming/Language Processors/Pieces of the puzzle",
     "content/Knowledge/Systems Programming/Language Processors/Language Processors.md",
-    "content/Knowledge/Programming/Architecture/placeholder.md",
     "content/Knowledge/Programming/Languages/C++",
+    "content/Knowledge/Programming/Architecture/placeholder.md",
     "content/Knowledge/Tools & Platforms/Containerisation",
     "content/Knowledge/Tools & Platforms/CLI Tools",
     "content/Knowledge/Tools & Platforms/CICD",
