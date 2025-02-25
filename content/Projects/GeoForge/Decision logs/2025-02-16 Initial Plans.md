@@ -13,9 +13,9 @@ The plan is to recreate my final year honours project from University. This hono
 The program consisted of a simple UI that took the size of the model in metres (x, y, z lengths), type of deposit & mineral (e.g. cooper porphyry), tonnage and grade (ratio of mass of the mineral extracted to the mass of the core). The program would then generate the model as a 3 dimensional array, which could be fed into an external program to visualise.
 
 For example, this is the full output:
-![[_images/Projects/GeoForge/Decision logs/honours-project-app-output-1.png|500]]
+![[projects-geoforge_honours-project-app-output-1.png|500]]
 This is the output filtered by copper
-![[_images/Projects/GeoForge/Decision logs/honours-project-app-output-2.png|500]]
+![[projects-geoforge_honours-project-app-output-2.png|500]]
 To generate models, the program actually used a few pre-defined 3D meshes (.stl files) for each deposit type. The program would then (with some other steps in-between):
 
 - load a random one of the meshes for the deposit type
