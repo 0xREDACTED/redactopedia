@@ -8,5 +8,5 @@
     "templates/"
   ],
   "alwaysUpdateLinks": true,
-  "attachmentFolderPath": "_images"
+  "attachmentFolderPath": "content/_images"
 }
