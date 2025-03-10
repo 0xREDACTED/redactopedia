@@ -6,22 +6,9 @@ The redactopedia is an Obsidian project, which is then converted into a static s
 
 ## Developer guide 
 
-### Requirements
+All that is needed to run the redactopedia locally is docker. After cloning the repo, simply run the following command
+which will host the redactopedia at http://localhost:8080 with hot-reload enabled over port 3001:
 
-Quartz v4 requires:
-- `npm >= 9.3.1`
-- `node == 20 || node >= 22`
-
-### Setting up the repo & contributing
-
-After cloning the repo, run the following command to set the actual quartz github repository as an upstream remote. This is required for quartz updates
 ```bash
-git remote add upstream https://github.com/jackyzha0/quartz.git
-```
-
-Next, run `npm i` to install all dependencies
-
-Whenever a change has been made, run the following command to push updates to the repository:
-```bash
-npx quartz sync
+docker run --rm -it -p 8080:8080 -p 3001:3001 -v ./content:/quartz/content $(docker build -q .)
 ```
