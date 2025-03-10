@@ -41,11 +41,11 @@ jobs:
       - name: Build docker image
         run: docker build -t quartz .
 
-      - name: Extract static files from container
+      - name: Extract static site from quartz container
         run: |
-          CONTAINER_ID=$(docker create quartz)
-          docker cp $CONTAINER_ID:/quartz/public ./public
-          docker rm $CONTAINER_ID
+          docker run --name quartz_builder --env CI=true quartz
+          docker cp quartz_builder:/quartz/public ./public
+          docker rm quartz_builder
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

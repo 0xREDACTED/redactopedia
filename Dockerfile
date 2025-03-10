@@ -27,7 +27,10 @@ RUN addgroup -S quartz && \
 RUN apk add --no-cache --update coreutils git && \
     git clone https://github.com/jackyzha0/quartz.git . && \
     git -c advice.detachedHead=false checkout "${QUARTZ_VERSION}" && \
-    apk del --no-cache git
+    apk del git
+
+COPY --chown=quartz:quartz entrypoint.sh .
+RUN chmod +x ./entrypoint.sh
 
 RUN npm ci
 
@@ -38,6 +41,4 @@ COPY --chown=quartz:quartz content content
 
 USER quartz
 
-EXPOSE 8080
-
-CMD ["npx", "quartz", "build", "--serve"]
+CMD ["./entrypoint.sh"]
