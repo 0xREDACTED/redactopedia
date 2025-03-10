@@ -167,8 +167,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9e28c5c34f5a9a61",
+  "active": "0458c55968c8deb4",
   "lastOpenFiles": [
+    "content/index.md",
+    "README.md",
     "public/404.html",
     "public/static/og-image.png",
     "public/static/icon.png",
@@ -181,7 +183,6 @@
     "public/tags/voxelisation.html",
     "public/tags/perlin-noise.html",
     "public/tags/operating-systems.html",
-    "public/tags/mesh.html",
     "public/_images/Projects/GeoForge/Decision-logs/honours-project-app-output-2.png",
     "public/_images/Projects/GeoForge/Decision-logs/honours-project-app-output-1.png",
     "public/_images/Knowledge/Tools--and--Platforms/CICD/parallel-matrix.png",
@@ -203,12 +204,10 @@
     "content/_images/Projects/GeoForge/Decision logs/honours-project-app-output-2.png",
     "content/_images/Projects/GeoForge/Decision logs/honours-project-app-output-1.png",
     "content/_images/Knowledge/Tools & Platforms/CICD/parallel-matrix.png",
-    "content/index.md",
     "content/Projects/GeoForge/Decision logs/2025-02-16 Initial Plans.md",
     "parla.md",
     "public/images/Projects/GeoForge/Decision-logs/honours-project-app-output-2.png",
     "public/images/Projects/GeoForge/Decision-logs/honours-project-app-output-1.png",
-    "README.md",
     "Untitled.canvas",
     "content/Programming/architecture/placeholder.md",
     "content/Systems Programming/Language Processors/Language Specific Implementations.md",

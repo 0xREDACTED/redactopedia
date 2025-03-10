@@ -2,6 +2,7 @@
   "hidden": true,
   "hiddenList": [
     "node_modules",
-    "quartz"
+    "quartz",
+    "customisations"
   ]
 }
