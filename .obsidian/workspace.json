@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/🧠 Knowledge/🤖 Artificial Intelligence/placeholder.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "placeholder"
+              "title": "README"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 454.00390243530273
+    "width": 328.00390243530273
   },
   "right": {
     "id": "cd84a8917bc7d937",
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/🧠 Knowledge/🤖 Artificial Intelligence/placeholder.md",
+                "file": "README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of placeholder"
+              "title": "Outline of README"
             }
           }
         ],
@@ -167,44 +167,43 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0458c55968c8deb4",
+  "active": "9e28c5c34f5a9a61",
   "lastOpenFiles": [
+    "content/🧠 Knowledge/🤖 Artificial Intelligence/placeholder.md",
     "content/🧠 Knowledge/⛓️ Blockchain/placeholder.md",
-    "content/🧠 Knowledge/🤖 Artificial Intelligence/placeholder.md",
-    "content/🧠 Knowledge/🖥️ Systems Programming/🏗️ Operating System architecture/placeholder.md",
-    "content/🧠 Knowledge/🤖 Artificial Intelligence/placeholder.md",
+    "content/🧠 Knowledge/🖥️ Systems Programming/OS architecture/placeholder.md",
     "content/index.md",
     "content/🧠 Knowledge/🤖 Artificial Intelligence/Untitled",
     "content/🧠 Knowledge/⛓️ Blockchain",
     "content/🧠 Knowledge/🤖 Artificial Intelligence",
-    "content/🧠 Knowledge/🖥️ Systems Programming/🏭 Language Processors/Pieces of the puzzle/Pre-processors.md",
-    "content/🧠 Knowledge/🖥️ Systems Programming/🏭 Language Processors/Pieces of the puzzle/Linkers.md",
-    "content/🧠 Knowledge/🖥️ Systems Programming/🏭 Language Processors/Pieces of the puzzle/JIT Compilers.md",
-    "content/🧠 Knowledge/🖥️ Systems Programming/🏭 Language Processors/Pieces of the puzzle/Interpreters.md",
-    "content/🧠 Knowledge/🖥️ Systems Programming/🏭 Language Processors/Pieces of the puzzle/Bytecode & VMs.md",
-    "content/🧠 Knowledge/🖥️ Systems Programming/🏭 Language Processors/Pieces of the puzzle/Assemblers.md",
-    "content/🧠 Knowledge/🛡️ Cybersecurity/🔐 Cryptography/placeholder.md",
-    "content/🧠 Knowledge/🛡️ Cybersecurity/🔍 Reverse Engineering/placeholder.md",
+    "content/🧠 Knowledge/🖥️ Systems Programming/Language Processors/Pieces of the puzzle/Pre-processors.md",
+    "content/🧠 Knowledge/🖥️ Systems Programming/Language Processors/Pieces of the puzzle/Linkers.md",
+    "content/🧠 Knowledge/🖥️ Systems Programming/Language Processors/Pieces of the puzzle/JIT Compilers.md",
+    "content/🧠 Knowledge/🖥️ Systems Programming/Language Processors/Pieces of the puzzle/Interpreters.md",
+    "content/🧠 Knowledge/🖥️ Systems Programming/Language Processors/Pieces of the puzzle/Bytecode & VMs.md",
+    "content/🧠 Knowledge/🖥️ Systems Programming/Language Processors/Pieces of the puzzle/Assemblers.md",
+    "content/🧠 Knowledge/🛡️ Cybersecurity/Cryptography/placeholder.md",
+    "content/🧠 Knowledge/🛡️ Cybersecurity/Reverse Engineering/placeholder.md",
     "content/🧠 Knowledge/🛡️ Cybersecurity/🔍 Reverse Engineering/Untitled.md",
-    "content/🧠 Knowledge/🛡️ Cybersecurity/🏴‍☠️ Hacking/placeholder.md",
-    "content/🧠 Knowledge/🛡️ Cybersecurity/🔍 Reverse Engineering",
-    "content/🧠 Knowledge/🛠️ Tools & Platforms/🚀 CICD/GitLab CI.md",
-    "content/🧠 Knowledge/🛡️ Cybersecurity/🔐 Cryptography",
-    "content/🧠 Knowledge/🛡️ Cybersecurity/🏴‍☠️ Hacking",
+    "content/🧠 Knowledge/🛡️ Cybersecurity/Hacking/placeholder.md",
+    "content/🧠 Knowledge/🛡️ Cybersecurity/Reverse Engineering",
+    "content/🧠 Knowledge/🛠️ Tools & Platforms/CICD/GitLab CI.md",
+    "content/🧠 Knowledge/🛡️ Cybersecurity/Cryptography",
+    "content/🧠 Knowledge/🛡️ Cybersecurity/Hacking",
     "content/🧠 Knowledge/🛡️ Cybersecurity",
     "content/Knowledge/Tools & Platforms/Operating Systems/Dual Booting.md",
-    "content/🧠 Knowledge/🛠️ Tools & Platforms/🔒 Secret Management/HashiCorp Vault/Auth Methods.md",
-    "content/🧠 Knowledge/🛠️ Tools & Platforms/⚙️ Operating Systems/Windows/placeholder.md",
-    "content/🧠 Knowledge/🛠️ Tools & Platforms/⚙️ Operating Systems/Ubuntu/placeholder.md",
-    "content/🧠 Knowledge/🛠️ Tools & Platforms/🐋 Containerisation/Kubernetes/placeholder.md",
-    "content/🧠 Knowledge/🛠️ Tools & Platforms/🐋 Containerisation/Docker/placeholder.md",
-    "content/🧠 Knowledge/🛠️ Tools & Platforms/⌨️ CLI Tools/git/Git Commit History.md",
-    "content/🧠 Knowledge/🖥️ Systems Programming/🏭 Language Processors/Pieces of the puzzle/Compilers.md",
-    "content/🧠 Knowledge/🧑🏼‍💻 Programming/📚 Languages/C++/Compilation Process.md",
-    "content/🧠 Knowledge/🛠️ Tools & Platforms/🔒 Secret Management/HashiCorp Vault",
-    "content/🧠 Knowledge/🛠️ Tools & Platforms/⚙️ Operating Systems/Windows",
-    "content/🧠 Knowledge/🛠️ Tools & Platforms/⚙️ Operating Systems/Ubuntu",
-    "content/🧠 Knowledge/🛠️ Tools & Platforms/⚙️ Operating Systems/Dual Booting.md",
+    "content/🧠 Knowledge/🛠️ Tools & Platforms/Secret Management/HashiCorp Vault/Auth Methods.md",
+    "content/🧠 Knowledge/🛠️ Tools & Platforms/Operating Systems/Windows/placeholder.md",
+    "content/🧠 Knowledge/🛠️ Tools & Platforms/Operating Systems/Ubuntu/placeholder.md",
+    "content/🧠 Knowledge/🛠️ Tools & Platforms/Containerisation/Kubernetes/placeholder.md",
+    "content/🧠 Knowledge/🛠️ Tools & Platforms/Containerisation/Docker/placeholder.md",
+    "content/🧠 Knowledge/🛠️ Tools & Platforms/CLI Tools/git/Git Commit History.md",
+    "content/🧠 Knowledge/🖥️ Systems Programming/Language Processors/Pieces of the puzzle/Compilers.md",
+    "content/🧠 Knowledge/🧑🏼‍💻 Programming/Languages/C++/Compilation Process.md",
+    "content/🧠 Knowledge/🛠️ Tools & Platforms/Secret Management/HashiCorp Vault",
+    "content/🧠 Knowledge/🛠️ Tools & Platforms/Operating Systems/Windows",
+    "content/🧠 Knowledge/🛠️ Tools & Platforms/Operating Systems/Ubuntu",
+    "content/🧠 Knowledge/🛠️ Tools & Platforms/Operating Systems/Dual Booting.md",
     "content/_images/Knowledge/Tools & Platforms/CICD/parallel-matrix.png",
     "public/static/og-image.png",
     "public/static/icon.png",
