@@ -3,6 +3,7 @@
   "hiddenList": [
     "node_modules",
     "quartz",
-    "customisations"
+    "customisations",
+    "README.md"
   ]
 }
