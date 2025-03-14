@@ -4,7 +4,7 @@ tags:
 ---
 
 The **redactopedia** is a collection of knowledge, architectural preferences, as well tips and tricks for common pitfalls that I have accumulated and built throughout my software career. It is currently divided into two main sections:
-### Knowledge
+### 🧠 Knowledge 
 
 As the name suggests, the knowledge section contains all (or at least a good chunk) of my software knowledge. This is *currently* broken up into the following subcategories:
 #### Programming
@@ -31,7 +31,7 @@ This folder contains both open & closed source tools and platforms that I have k
 - Cloud platforms (AWS, Azure, etc)
 - Secret Management
 	- Hashicorp Vault
-### Projects
+### 🛠️ Projects
 
 The project section is what I use to document any of my own or other **open source** projects I plan, create or contribute to. I don't include anything on proprietary stuff that I plan to make money on for obvious reasons :P
 
