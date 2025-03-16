@@ -1,0 +1,9 @@
+{
+  "jsFiles": ".obsidian/plugins/customjs/quote-padding-calculator.js",
+  "jsFolder": "",
+  "startupScriptNames": [
+    "QuoteStyleAdjuster"
+  ],
+  "registeredInvocableScriptNames": [],
+  "rerunStartupScriptsOnFileChange": true
+}

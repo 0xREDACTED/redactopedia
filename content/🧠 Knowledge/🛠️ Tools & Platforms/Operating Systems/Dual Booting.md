@@ -6,8 +6,9 @@ tags:
   - linux
 ---
 ## Wrong time in Windows after Dual boot
-
->This fix will only work for Linux distributions that use `systemd`. This includes Ubuntu, RHEL, Arch Linux, etc.
+>This fix will only work for Linux distributions that use `systemd`. This includes Ubuntu,    
+>RHEL, Arch Linux, etc.
+>a
 
 After creating a dual boot between your Windows and Linux partitions, you'll likely encounter an issue where upon returning to your Windows OS the time is out of whack.
 
