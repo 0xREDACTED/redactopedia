@@ -4,9 +4,9 @@
   "theme": "obsidian",
   "enabledCssSnippets": [
     "mermaid-fit-page",
-    "list-spacing",
     "mermaid-resizable",
     "consistent-line-spacing",
-    "set-editor-style-to-reader"
+    "set-editor-style-to-reader",
+    "list-spacing"
   ]
 }

@@ -7,7 +7,6 @@ tags:
   - voxelisation
 ---
 ## Problem & Scope
-
 The plan is to recreate my final year honours project from University. This honours project involved developing software that generated realistic 3D geological ore bodies under the ground. Unfortunately, we wrote this when we were inexperienced. It used python and was quite slow and poorly written.
 
 The program consisted of a simple UI that took the size of the model in metres (x, y, z lengths), type of deposit & mineral (e.g. cooper porphyry), tonnage and grade (ratio of mass of the mineral extracted to the mass of the core). The program would then generate the model as a 3 dimensional array, which could be fed into an external program to visualise.
