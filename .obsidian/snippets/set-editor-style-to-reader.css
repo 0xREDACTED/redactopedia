@@ -1,0 +1,27 @@
+/* 
+* This css snippet is used to make the editor view match the reader view
+* as best as possible
+*/
+
+/* default editor headers have no top padding and have padding afterwards  */
+.HyperMD-header {
+    padding-top: 0 !important;
+    padding-bottom: var(--p-spacing) !important;
+}  
+
+/* headers in the editor directly after text should have top padding  */
+div.cm-line + div.HyperMD-header {
+    padding-top: var(--heading-spacing) !important;
+}
+
+.HyperMD-quote {
+    text-indent: 0 !important;
+    tab-size: var(--indent-size) !important;
+    padding-bottom: 0 !important;
+
+    /* 
+       subtracts calculated width of .cm-transparent
+       calculated in .obsidian/plugins/customjs/calculate-cm-transparent-width.js 
+    */
+    padding-inline-start: calc(var(--size-4-6) - var(--transparent-span-width, 0px)) !important;
+}
