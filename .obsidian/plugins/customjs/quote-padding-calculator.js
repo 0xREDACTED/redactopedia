@@ -6,6 +6,8 @@
 
 class QuoteStyleAdjuster {
 
+  static canvas = document.createElement('canvas');
+
   async invoke() {
 
     await cJS();
@@ -28,7 +30,7 @@ class QuoteStyleAdjuster {
     // Get computed styles
     const style = getComputedStyle(measureSpan);
     const fontStr = `${style.fontWeight} ${style.fontSize} ${style.fontFamily}`;
-    const charWidth = this.getTextWidth('>', fontStr);
+    const charWidth = this.getTextWidth('>', fontStr) - 1;
     
     // Clean up
     document.body.removeChild(container);
@@ -58,12 +60,10 @@ class QuoteStyleAdjuster {
     * @see https://stackoverflow.com/questions/118241/calculate-text-width-with-javascript/21015393#21015393
   */
   getTextWidth(text, font) {
-    // re-use canvas object for better performance
-    const canvas = getTextWidth.canvas || (getTextWidth.canvas = document.createElement("canvas"));
-    const context = canvas.getContext("2d");
+    
+    const context = QuoteStyleAdjuster.canvas.getContext("2d");
     context.font = font;
-    const metrics = context.measureText(text);
-    return metrics.width;
+    return context.measureText(text).width;
   }
 
 }
