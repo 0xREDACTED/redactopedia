@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/index.md",
+                "file": "content/🧠 Knowledge/🛠️ Tools & Platforms/Operating Systems/Dual Booting.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "Dual Booting"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/index.md",
+                "file": "content/🧠 Knowledge/🛠️ Tools & Platforms/Operating Systems/Dual Booting.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of index"
+              "title": "Outline of Dual Booting"
             }
           }
         ],
@@ -169,9 +169,10 @@
   },
   "active": "0cdc6f24efa33d53",
   "lastOpenFiles": [
-    "content/📝 Projects/GeoForge/Decision logs/2025-02-16 Initial Plans.md",
     "content/index.md",
+    "content/🧠 Knowledge/🛠️ Tools & Platforms/CICD/GitLab CI.md",
     "content/🧠 Knowledge/🛠️ Tools & Platforms/Operating Systems/Dual Booting.md",
+    "content/📝 Projects/GeoForge/Decision logs/2025-02-16 Initial Plans.md",
     "content/🧠 Knowledge/🧑🏼‍💻 Programming/Languages/C++/Compilation Process.md",
     "README.md",
     "content/🧠 Knowledge/🤖 Artificial Intelligence/placeholder.md",
@@ -191,7 +192,6 @@
     "content/🧠 Knowledge/🛡️ Cybersecurity/🔍 Reverse Engineering/Untitled.md",
     "content/🧠 Knowledge/🛡️ Cybersecurity/Hacking/placeholder.md",
     "content/🧠 Knowledge/🛡️ Cybersecurity/Reverse Engineering",
-    "content/🧠 Knowledge/🛠️ Tools & Platforms/CICD/GitLab CI.md",
     "content/🧠 Knowledge/🛡️ Cybersecurity/Cryptography",
     "content/🧠 Knowledge/🛡️ Cybersecurity/Hacking",
     "content/🧠 Knowledge/🛡️ Cybersecurity",
