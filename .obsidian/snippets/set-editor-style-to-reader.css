@@ -14,14 +14,19 @@ div.cm-line + div.HyperMD-header {
     padding-top: var(--heading-spacing) !important;
 }
 
+/* handle block quotes this makes use of some js at
+   .obsidian/plugins/customjs/quote-padding-calculator.js */
 .HyperMD-quote {
     text-indent: 0 !important;
     tab-size: var(--indent-size) !important;
     padding-bottom: 0 !important;
 
-    /* 
-       subtracts calculated width of .cm-transparent
-       calculated in .obsidian/plugins/customjs/calculate-cm-transparent-width.js 
-    */
+    /* subtracts calculated width of .cm-transparent
+       calculated in .obsidian/plugins/customjs/quote-padding-calculator.js */
     padding-inline-start: calc(var(--size-4-6) - var(--transparent-span-width, 0px)) !important;
+}
+
+/* handle empty lines */
+div.cm-line:has(> br:only-child) {
+    line-height: var(--p-spacing) !important;
 }

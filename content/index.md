@@ -8,7 +8,7 @@ As the name suggests, the knowledge section contains all (or at least a good chu
 
 - 🧑🏼‍💻 **Programming** 
   Language/framework-specific patterns, architectures, and pitfalls (e.g., C++ move semantics, Java Spring Boot quirks).
-  
+
 - 🖥️ **Systems Programming** 
   Low-level system design and implementation (OS kernels, compilers, driver development).
   
