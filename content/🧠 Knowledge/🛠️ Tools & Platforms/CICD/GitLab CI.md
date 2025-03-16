@@ -12,12 +12,12 @@ tags:
 GitLab sets a bunch of shell options by default. These default options include `errexit` (aka `set -e`) and `pipefail`. The combination of these two means that if the script involves anything that returns a non-zero exit status, the pipeline fails.
 
 For example, consider the following:
-```bash
+```bash frame="none"
 error_count=$(grep -c "Error: " log_file)
 ```
 Usually, if the grep doesn't match anything we would expect `error_count` to be zero with no problems. However, this will result in the pipeline failing since the `grep` results in an exit status of `1`.
 Another example involving the capturing of an exit is:
-```bash
+```bash frame="none"
 kubectl get pods | grep "something"
 if [ $? -eq 1 ]; then
   echo "Couldn't find something!"
@@ -25,7 +25,7 @@ fi
 ```
 One would expect the if statement to be triggered if no pod with `"something"` in their name were present. However, the pipeline will fail before reaching the if statement. 
 In order to do this, the exit status needs to be stored on the same line like so:
-```bash
+```bash frame="none"
 return_code=0; kubectl get pods | grep "something" || return_code=$?
 if [ $return_code -eq 1 ]; then
   echo "couldn't find something!"
@@ -51,7 +51,7 @@ This will cause `$[[ inputs.my_array_values ]]` to hold the following value:
 '[value_1, "value 2", value 3, "value 4"]'
 ```
 Using `jq` isn't possible since this is invalid JSON. This means we need to resort to some tricky bash wizardry to convert this to a useable bash array. Behold:
-```bash
+```shell
 readarray -t MY_ARRAY < <(echo $[[ inputs.my_array_values ]] |
   sed '
     s/[][]//g; # remove brackets

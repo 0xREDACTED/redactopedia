@@ -30,3 +30,18 @@ div.cm-line + div.HyperMD-header {
 div.cm-line:has(> br:only-child) {
     line-height: var(--p-spacing) !important;
 }
+
+/* used to remove the frames from shiki-highlighter plugin */
+figcaption.header {
+    display: none !important;
+}
+
+/* apply margin above code blocks */
+.markdown-source-view.mod-cm6 .cm-content > div:is(.cm-preview-code-block, .cm-embed-block) + div.cm-line {
+    margin-top: var(--p-spacing) !important;
+}
+
+/* apply margin below code blocks */
+.markdown-source-view.mod-cm6 .cm-content > div.cm-line:has(+ div:is(.cm-preview-code-block, .cm-embed-block)) {
+    margin-bottom: var(--p-spacing) !important;
+}
