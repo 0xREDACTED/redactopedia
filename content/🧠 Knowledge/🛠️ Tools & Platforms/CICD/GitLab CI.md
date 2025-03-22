@@ -15,7 +15,7 @@ For example, consider the following:
 ```bash frame="none"
 error_count=$(grep -c "Error: " log_file)
 ```
-# h1
+## h2
 Usually, if the grep doesn't match anything we would expect `error_count` to be zero with no problems. However, this will result in the pipeline failing since the `grep` results in an exit status of `1`.
 Another example involving the capturing of an exit is:
 ```bash frame="none"
