@@ -201,18 +201,25 @@ blockquote {
 }
 
 /* handle block quotes. This makes use of some js at
-   .obsidian/plugins/customjs/quote-padding-calculator.js */
-.HyperMD-quote span.cm-quote:not(.cm-formatting-quote) {
-    display: inline-block !important;
-    padding-right: 0.8rem !important;
+   .obsidian/plugins/customjs/quote-padding-calculator.js
+   target only the FIRST .cm-quote span after the formatting element */
+.HyperMD-quote .cm-formatting-quote + span.cm-quote:not(.cm-inline-code) {
+    margin-left: calc(var(--size-4-6) - var(--transparent-span-width, 0px));
+}
 
-    /* subtracts calculated width of .cm-transparent
-       calculated in .obsidian/plugins/customjs/quote-padding-calculator.js */
-    transform: translateX(calc(var(--size-4-6) - var(--transparent-span-width, 0px)));
+/* Reset margin for subsequent .cm-quote spans */
+.HyperMD-quote span.cm-quote:not(.cm-formatting-quote, .cm-inline-code) {
+    margin-left: 0;
+    padding-right: 0.8rem;
+}
+
+/* Remove padding if any subsequent sibling (including non-adjacent) is .cm-inline-code */
+.HyperMD-quote span.cm-quote:not(.cm-formatting-quote, .cm-inline-code):has(~ .cm-inline-code) {
+    padding-right: 0;
 }
 
 /* handle empty lines directly after a quote */
-.markdown-source-view.mod-cm6  .HyperMD-quote + div.cm-line:has(> br:only-child) {
+.markdown-source-view.mod-cm6 .HyperMD-quote + div.cm-line:has(> br:only-child) {
     line-height: var(--p-spacing) !important;
 }
 
