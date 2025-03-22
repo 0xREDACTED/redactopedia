@@ -9,9 +9,7 @@ Authentication methods in HashiCorp Vault are plugins that verify identities (us
 ```bash
 vault auth enable [options] <METHOD_TYPE>
 ```
-
 ## The importance of using `-path` 
-
 One of the options when enabling an auth method is the `-path` flag. If unused, vault will default to create a vault path with the name of the auth type. For example, doing `vault auth enable jwt` will create `auth/jwt`. This may be okay for the majority of cases, however, consider the scenario where you have multiple external services that need to integrate with vault via the same auth type.
 
 For example, GitLab can be integrated via jwt so that GitLab CI can use secrets within Vault. Now, what if there were two GitLab instances (for whatever reason) that needed to use the same Vault? We would do the following:

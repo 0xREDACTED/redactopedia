@@ -52,18 +52,14 @@ div:is(
     margin-top: calc(16px - var(--header-compensation)) !important;
 }
 
-/* apply margin to bottom of the first header */
-.cm-content > :not(.HyperMD-header ~ .HyperMD-header).HyperMD-header {
+/* apply margin to bottom of the first header if there is nothing before it
+   (the first child is actually <div contenteditable="false"></div>) */
+.cm-content > div:nth-child(2).HyperMD-header {
     margin-bottom: calc(var(--p-spacing)) !important;
 }
 
-/* all other headers followed by non-headers get bottom margin */
-.markdown-source-view.mod-cm6
-div.HyperMD-header:has(
-    + div.cm-line:not(.HyperMD-header)
-    ):not(
-        :not(.HyperMD-header ~ .HyperMD-header).HyperMD-header
-    ) {
+/* apply different margin to bottom of every other header that has a non-header element after it*/
+.cm-content > div:not(:nth-child(2)).HyperMD-header:has(+ div.cm-line:not(.HyperMD-header)) {
     margin-bottom: calc(var(--p-spacing) - var(--header-compensation)) !important;
 }
 

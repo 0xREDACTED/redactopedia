@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "content/🧠 Knowledge/🛠️ Tools & Platforms/Operating Systems/Dual Booting.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -169,6 +169,7 @@
   },
   "active": "e9ea2cdb9b204053",
   "lastOpenFiles": [
+    "content/🧠 Knowledge/🛠️ Tools & Platforms/Secret Management/HashiCorp Vault/Auth Methods.md",
     "content/index.md",
     "content/🧠 Knowledge/🛠️ Tools & Platforms/Operating Systems/Dual Booting.md",
     "content/🧠 Knowledge/🛠️ Tools & Platforms/CICD/GitLab CI.md",
@@ -197,7 +198,6 @@
     "content/🧠 Knowledge/🛡️ Cybersecurity/Hacking",
     "content/🧠 Knowledge/🛡️ Cybersecurity",
     "content/Knowledge/Tools & Platforms/Operating Systems/Dual Booting.md",
-    "content/🧠 Knowledge/🛠️ Tools & Platforms/Secret Management/HashiCorp Vault/Auth Methods.md",
     "content/🧠 Knowledge/🛠️ Tools & Platforms/Operating Systems/Windows/placeholder.md",
     "content/🧠 Knowledge/🛠️ Tools & Platforms/Operating Systems/Ubuntu/placeholder.md",
     "content/🧠 Knowledge/🛠️ Tools & Platforms/Containerisation/Kubernetes/placeholder.md",
