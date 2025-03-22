@@ -15,6 +15,7 @@ For example, consider the following:
 ```bash frame="none"
 error_count=$(grep -c "Error: " log_file)
 ```
+# h1
 Usually, if the grep doesn't match anything we would expect `error_count` to be zero with no problems. However, this will result in the pipeline failing since the `grep` results in an exit status of `1`.
 Another example involving the capturing of an exit is:
 ```bash frame="none"
@@ -35,9 +36,7 @@ We can also of course get output and the exit status simultaneously:
 ```bash
 return_code=0; error_count=$(grep -c "Error: " log_file) || return_code=$?
 ```
-
 ## Converting an input array into a bash array
-
 When writing your GitLab CI, you may want to consume an inputted array and process it in your bash script. Unfortunately, the inputted arrays are actually JSON-like strings. They aren't exactly JSON since the inputted variables may not be surrounded in double quotes and can have spaces without double quotes surrounding them. For example, the following is totally valid:
 ```yaml
 my_array_values:
