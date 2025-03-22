@@ -30,25 +30,25 @@ class QuoteStyleAdjuster {
     // Get computed styles
     const style = getComputedStyle(measureSpan);
     const fontStr = `${style.fontWeight} ${style.fontSize} ${style.fontFamily}`;
-    const charWidth = this.getTextWidth('>', fontStr) - 1;
+    const quoteCharWidth = this.getTextWidth('>', fontStr) - 1;
     
     // Clean up
     document.body.removeChild(container);
 
     // Set global CSS variable
-    const styleTag = document.createElement('style');
-    styleTag.id = 'quote-padding-override';
-    styleTag.textContent = `
-        .HyperMD-quote {
-            --transparent-span-width: ${charWidth}px !important;
+    const styleTagQuote = document.createElement('style');
+    styleTagQuote.id = 'quote-padding-override';
+    styleTagQuote.textContent = `
+        :root {
+            --transparent-span-width: ${quoteCharWidth}px !important;
         }
     `;
 
     // Remove existing if present
-    const existing = document.getElementById('quote-padding-override');
-    if (existing) existing.remove();
+    const existingQuotePaddingOverride = document.getElementById('quote-padding-override');
+    if (existingQuotePaddingOverride) existingQuotePaddingOverride.remove();
     
-    document.head.appendChild(styleTag);
+    document.head.appendChild(styleTagQuote);
   }
 
   /**

@@ -4,6 +4,8 @@
   "startupScriptNames": [
     "QuoteStyleAdjuster"
   ],
-  "registeredInvocableScriptNames": [],
+  "registeredInvocableScriptNames": [
+    "QuoteStyleAdjuster"
+  ],
   "rerunStartupScriptsOnFileChange": true
 }

@@ -6,6 +6,7 @@
     "mermaid-fit-page",
     "mermaid-resizable",
     "consistent-line-spacing",
+    "make-same",
     "set-editor-style-to-reader"
   ]
 }
