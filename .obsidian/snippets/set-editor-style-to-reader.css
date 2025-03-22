@@ -4,14 +4,14 @@
 */
 
 :root {
-    --header-compensation: 0.127rem;
+
     /* Exact 2.03px at 16px base */
-}
+    --header-compensation: 0.127rem;
 
+    /* should be set to the value of the following (this is used in read mode):
+    .markdown-rendered ul > li {margin-inline-start: 3ch;} */
+    --list-indent-edit-mode: 3ch;
 
-/* used to remove the frames from shiki-highlighter plugin */
-figcaption.header {
-    display: none !important;
 }
 
 /* handle empty lines */
@@ -24,9 +24,7 @@ figcaption.header {
     white-space: pre-wrap !important;
 }
 
-/****************************************************/
-/********************* HEADERS **********************/
-/****************************************************/
+/* #region Headers */
 
 /* remove padding from editor headers */
 .markdown-source-view.mod-cm6 .HyperMD-header {
@@ -169,9 +167,14 @@ div:is(
 
 /* could not figure out how to account for something like h1 -> h1 -> h1 -> etc etc */
 
-/****************************************************/
-/****************** CODE BLOCKS *********************/
-/****************************************************/
+/* #endregion */
+
+/* #region Code Blocks */
+
+/* used to remove the frames from shiki-highlighter plugin */
+figcaption.header {
+    display: none !important;
+}
 
 /* apply bottom margin to text (that isn't empty) above code blocks */
 .markdown-source-view.mod-cm6 .cm-content > div.cm-line:has(+ div:is(.cm-preview-code-block, .cm-embed-block)):not(:has(> br:only-child)) {
@@ -188,23 +191,70 @@ div:is(
     font-size: var(--code-size) !important;
 }
 
-/****************************************************/
-/********************* QUOTES ***********************/
-/****************************************************/
+/* #endregion */
 
-/* handle block quotes this makes use of some js at
+/* #region Quotes */
+
+/* The blockquotes actually don't pad nicely on read so it's changed here */
+blockquote {
+    padding-right: 0.6rem !important;
+}
+
+/* handle block quotes. This makes use of some js at
    .obsidian/plugins/customjs/quote-padding-calculator.js */
-.HyperMD-quote {
-    text-indent: 0 !important;
-    tab-size: var(--indent-size) !important;
-    padding-bottom: 0 !important;
+.HyperMD-quote span.cm-quote:not(.cm-formatting-quote) {
+    display: inline-block !important;
+    padding-right: 0.8rem !important;
 
     /* subtracts calculated width of .cm-transparent
        calculated in .obsidian/plugins/customjs/quote-padding-calculator.js */
-    padding-inline-start: calc(var(--size-4-6) - var(--transparent-span-width, 0px)) !important;
+    transform: translateX(calc(var(--size-4-6) - var(--transparent-span-width, 0px)));
 }
 
 /* handle empty lines directly after a quote */
 .markdown-source-view.mod-cm6  .HyperMD-quote + div.cm-line:has(> br:only-child) {
     line-height: var(--p-spacing) !important;
 }
+
+/* #endregion */
+
+/* #region Lists */
+
+/* lists in the editor directly after text, code and images should have top margin */
+.markdown-source-view.mod-cm6 
+div:is(
+    .cm-line:not(.HyperMD-header, .HyperMD-quote, .HyperMD-list-line),  
+    .cm-preview-code-block,         
+    .cm-embed-block,                
+    .internal-embed,                
+    .media-embed,                   
+    .image-embed,                   
+    .is-loaded,                     
+) + .HyperMD-list-line {
+    margin-top: calc(var(--p-spacing)) !important;
+}
+
+/* indent the lists to match read mode */
+.markdown-source-view.mod-cm6 .HyperMD-list-line {
+    transform: translateX(calc(var(--list-indent-edit-mode) - 25px));
+}
+
+/* modify list elements without bullets (e.g. after hitting shift+enter */
+.markdown-source-view.mod-cm6 .HyperMD-list-line.HyperMD-list-line-nobullet {
+    padding-bottom: 1.6px !important;
+}
+
+/* modify list elements with bullets */
+.markdown-source-view.mod-cm6 .HyperMD-list-line:not(.HyperMD-list-line-nobullet) {
+    padding-bottom: 0px !important;
+}
+
+
+/* account for the bullet */
+.cm-formatting.cm-formatting-list .list-bullet {
+    transform: translateX(-0.23rem);
+    padding-right: 1px;
+}
+
+
+/* #endregion */
