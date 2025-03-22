@@ -245,8 +245,13 @@ div:is(
 }
 
 /* modify list elements with bullets */
-.markdown-source-view.mod-cm6 .HyperMD-list-line:not(.HyperMD-list-line-nobullet) {
+.markdown-source-view.mod-cm6 .HyperMD-list-line:not(.HyperMD-list-line-nobullet):has(.cm-formatting.cm-formatting-list .list-bullet) {
     padding-bottom: 0px !important;
+}
+
+/* modify list elements with numbers */
+.markdown-source-view.mod-cm6 .HyperMD-list-line:not(.HyperMD-list-line-nobullet):has(.cm-formatting.cm-formatting-list .list-number) {
+    padding-bottom: 0.8px !important;
 }
 
 
@@ -256,5 +261,23 @@ div:is(
     padding-right: 1px;
 }
 
+/* move element holding list number */
+.markdown-source-view.mod-cm6 .HyperMD-list-line .cm-formatting.cm-formatting-list:has(.list-number)
+~ span {
+    display: inline-flex !important;
+    transform: translateX(-0.1675rem) !important;
+}
+
+/* move the list number */
+.markdown-source-view.mod-cm6 .HyperMD-list-line .cm-formatting.cm-formatting-list .list-number {
+    display: inline-flex !important;
+    transform: translateX(-0.175rem) !important;
+}
+
+/* modify the read mode X position to match editor since it's impossible to do the other way round 
+   without breaking dotpoint lists */
+div.el-ol > ol > li {
+    transform: translateX(0.225rem) !important;
+}
 
 /* #endregion */
