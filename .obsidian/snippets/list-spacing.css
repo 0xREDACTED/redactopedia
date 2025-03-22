@@ -1,6 +1,5 @@
 :root {
 	--list-item-spacing: 1em;
-    --list-item-spacing-edit: 0.5em;
 }
 /* reading mode */
 :is(ul, ol) li {

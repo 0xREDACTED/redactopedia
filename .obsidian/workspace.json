@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "7c22bc3ff71b1f90",
+        "id": "fb098931a74b54cc",
         "type": "tabs",
         "children": [
           {
-            "id": "0cdc6f24efa33d53",
+            "id": "e9ea2cdb9b204053",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/🧠 Knowledge/🛠️ Tools & Platforms/Operating Systems/Dual Booting.md",
+                "file": "content/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Dual Booting"
+              "title": "index"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 326.00390243530273
+    "width": 325.0026054382324
   },
   "right": {
     "id": "cd84a8917bc7d937",
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/🧠 Knowledge/🛠️ Tools & Platforms/Operating Systems/Dual Booting.md",
+                "file": "content/index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Dual Booting"
+              "title": "Outline of index"
             }
           }
         ],
@@ -167,11 +167,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0cdc6f24efa33d53",
+  "active": "e9ea2cdb9b204053",
   "lastOpenFiles": [
-    "content/index.md",
-    "content/🧠 Knowledge/🛠️ Tools & Platforms/CICD/GitLab CI.md",
     "content/🧠 Knowledge/🛠️ Tools & Platforms/Operating Systems/Dual Booting.md",
+    "content/index.md",
+    "image.md",
+    "content/🧠 Knowledge/🛠️ Tools & Platforms/CICD/GitLab CI.md",
     "content/📝 Projects/GeoForge/Decision logs/2025-02-16 Initial Plans.md",
     "content/🧠 Knowledge/🧑🏼‍💻 Programming/Languages/C++/Compilation Process.md",
     "README.md",
@@ -201,7 +202,6 @@
     "content/🧠 Knowledge/🛠️ Tools & Platforms/Operating Systems/Ubuntu/placeholder.md",
     "content/🧠 Knowledge/🛠️ Tools & Platforms/Containerisation/Kubernetes/placeholder.md",
     "content/🧠 Knowledge/🛠️ Tools & Platforms/Containerisation/Docker/placeholder.md",
-    "content/🧠 Knowledge/🛠️ Tools & Platforms/CLI Tools/git/Git Commit History.md",
     "content/🧠 Knowledge/🛠️ Tools & Platforms/Secret Management/HashiCorp Vault",
     "content/🧠 Knowledge/🛠️ Tools & Platforms/Operating Systems/Windows",
     "content/🧠 Knowledge/🛠️ Tools & Platforms/Operating Systems/Ubuntu",

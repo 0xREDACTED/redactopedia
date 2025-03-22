@@ -3,16 +3,183 @@
 * as best as possible
 */
 
-/* default editor headers have no top padding and have padding afterwards  */
-.HyperMD-header {
-    padding-top: 0 !important;
-    padding-bottom: var(--p-spacing) !important;
-}  
-
-/* headers in the editor directly after text should have top padding  */
-div.cm-line + div.HyperMD-header {
-    padding-top: var(--heading-spacing) !important;
+:root {
+    --header-compensation: 0.127rem;
+    /* Exact 2.03px at 16px base */
 }
+
+
+/* used to remove the frames from shiki-highlighter plugin */
+figcaption.header {
+    display: none !important;
+}
+
+/* handle empty lines */
+.markdown-source-view.mod-cm6 div.cm-line:has(> br:only-child) {
+    line-height: calc(var(--p-spacing) + 0.01rem) !important;
+}
+
+/* make editor view wrap lines the same as read view */
+.cm-lineWrapping {
+    white-space: pre-wrap !important;
+}
+
+/****************************************************/
+/********************* HEADERS **********************/
+/****************************************************/
+
+/* remove padding from editor headers */
+.markdown-source-view.mod-cm6 .HyperMD-header {
+    padding-top: 0 !important;
+}
+
+/* headers in the editor directly after text, code and images should have top margin */
+.markdown-source-view.mod-cm6 
+div:is(
+    .cm-line:not(.HyperMD-header),  
+    .cm-preview-code-block,         
+    .cm-embed-block,                
+    .internal-embed,                
+    .media-embed,                   
+    .image-embed,                   
+    .is-loaded                      
+) + div.HyperMD-header {
+    margin-top: calc(var(--heading-spacing) - var(--header-compensation)) !important;
+}
+
+/* Headers followed by non-headers get bottom margin */
+div.HyperMD-header:has(+ div.cm-line:not(.HyperMD-header)) {
+    margin-bottom: calc(var(--p-spacing)) !important;
+}
+
+/* fix header letter spacing */
+:is(.HyperMD-header-4, .HyperMD-header-5, .HyperMD-header-6) {
+    letter-spacing: 0.015em !important;
+}
+
+/* adjust line-height for h1 after non-header */
+.markdown-source-view.mod-cm6 
+div:is(
+    .cm-line:not(.HyperMD-header),  
+    .cm-preview-code-block,         
+    .cm-embed-block,                
+    .internal-embed,                
+    .media-embed,                   
+    .image-embed,                   
+    .is-loaded                      
+) + .HyperMD-header-1 {
+    line-height: calc(var(--h1-line-height) + 0.125) !important;
+}
+
+/* adjust line-height for h2 after non-header */
+.markdown-source-view.mod-cm6 
+div:is(
+    .cm-line:not(.HyperMD-header),  
+    .cm-preview-code-block,         
+    .cm-embed-block,                
+    .internal-embed,                
+    .media-embed,                   
+    .image-embed,                   
+    .is-loaded                      
+) + .HyperMD-header-2 {
+    line-height: calc(var(--h2-line-height) + 0.175) !important;
+}
+
+/* adjust line-height for h3 after non-header */
+.markdown-source-view.mod-cm6 
+div:is(
+    .cm-line:not(.HyperMD-header),  
+    .cm-preview-code-block,         
+    .cm-embed-block,                
+    .internal-embed,                
+    .media-embed,                   
+    .image-embed,                   
+    .is-loaded                      
+) + .HyperMD-header-3 {
+    line-height: calc(var(--h3-line-height) + 0.225) !important;
+}
+
+/* adjust line-height for h4 after non-header */
+.markdown-source-view.mod-cm6 
+div:is(
+    .cm-line:not(.HyperMD-header),  
+    .cm-preview-code-block,         
+    .cm-embed-block,                
+    .internal-embed,                
+    .media-embed,                   
+    .image-embed,                   
+    .is-loaded                      
+) + .HyperMD-header-4 {
+    line-height: calc(var(--h4-line-height) + 0.275) !important;
+}
+
+/* adjust line-height for h5 after non-header */
+.markdown-source-view.mod-cm6 
+div:is(
+    .cm-line:not(.HyperMD-header),  
+    .cm-preview-code-block,         
+    .cm-embed-block,                
+    .internal-embed,                
+    .media-embed,                   
+    .image-embed,                   
+    .is-loaded                      
+) + .HyperMD-header-5 {
+    line-height: calc(var(--h5-line-height) + 0.275) !important;
+}
+
+/* adjust line-height for h6 after non-header */
+.markdown-source-view.mod-cm6 
+div:is(
+    .cm-line:not(.HyperMD-header),  
+    .cm-preview-code-block,         
+    .cm-embed-block,                
+    .internal-embed,                
+    .media-embed,                   
+    .image-embed,                   
+    .is-loaded                      
+) + .HyperMD-header-6 {
+    line-height: calc(var(--h5-line-height) + 0.4) !important;
+}
+
+/* adjust header's bottom margin if directly followed by another header  */
+.markdown-source-view.mod-cm6 .HyperMD-header:has(+ .HyperMD-header) {
+    margin-bottom: calc(var(--p-spacing) - 0.005rem) !important;
+}
+
+/* adjust h1 bottom margin if it has another header after it (it's different to other headers) */
+.markdown-source-view.mod-cm6 :not(.HyperMD-header) + .HyperMD-header-1:has(+ .HyperMD-header) {
+    margin-bottom: calc(var(--p-spacing) - 0.13rem) !important;
+}
+
+/* account for the case where h1 has a h1 directly after */
+.markdown-source-view.mod-cm6 :not(.HyperMD-header) + .HyperMD-header-1:has(+ .HyperMD-header-1) {
+    margin-bottom: calc(var(--p-spacing) - 0.25rem) !important;
+}
+
+/* could not figure out how to account for something like h1 -> h1 -> h1 -> etc etc */
+
+/****************************************************/
+/****************** CODE BLOCKS *********************/
+/****************************************************/
+
+/* apply bottom margin to text (that isn't empty) above code blocks */
+.markdown-source-view.mod-cm6 .cm-content > div.cm-line:has(+ div:is(.cm-preview-code-block, .cm-embed-block)):not(:has(> br:only-child)) {
+    margin-bottom: var(--p-spacing) !important;
+}
+
+/* apply tp margin to text (that isn't empty) below code blocks */
+.markdown-source-view.mod-cm6 .cm-content > div:is(.cm-preview-code-block, .cm-embed-block) + div.cm-line:not(.HyperMD-header):not(:has(> br:only-child)) {
+    margin-top: var(--p-spacing) !important;
+}
+
+/* make code in headers looks the same as in reader mode */
+.HyperMD-header > span.cm-inline-code {
+    font-size: var(--code-size) !important;
+}
+
+/****************************************************/
+/********************* QUOTES ***********************/
+/****************************************************/
 
 /* handle block quotes this makes use of some js at
    .obsidian/plugins/customjs/quote-padding-calculator.js */
@@ -26,22 +193,7 @@ div.cm-line + div.HyperMD-header {
     padding-inline-start: calc(var(--size-4-6) - var(--transparent-span-width, 0px)) !important;
 }
 
-/* handle empty lines */
-div.cm-line:has(> br:only-child) {
+/* handle empty lines directly after a quote */
+.HyperMD-quote + div.cm-line:has(> br:only-child) {
     line-height: var(--p-spacing) !important;
-}
-
-/* used to remove the frames from shiki-highlighter plugin */
-figcaption.header {
-    display: none !important;
-}
-
-/* apply margin above code blocks */
-.markdown-source-view.mod-cm6 .cm-content > div:is(.cm-preview-code-block, .cm-embed-block) + div.cm-line {
-    margin-top: var(--p-spacing) !important;
-}
-
-/* apply margin below code blocks */
-.markdown-source-view.mod-cm6 .cm-content > div.cm-line:has(+ div:is(.cm-preview-code-block, .cm-embed-block)) {
-    margin-bottom: var(--p-spacing) !important;
 }
