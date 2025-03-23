@@ -147,7 +147,7 @@ div:is(
     .image-embed,                   
     .is-loaded                      
 ) + .HyperMD-header-6 {
-    line-height: calc(var(--h5-line-height) + 0.4) !important;
+    line-height: calc(var(--h6-line-height) + 0.4) !important;
 }
 
 /* adjust header's bottom margin if directly followed by another header  */
@@ -200,6 +200,12 @@ blockquote {
     padding-right: 0.6rem !important;
 }
 
+/* Correct padding on editor view */
+.HyperMD-quote {
+    padding-right: 0.8em !important;
+    padding-bottom: 0 !important;
+}
+
 /* handle block quotes. This makes use of some js at
    .obsidian/plugins/customjs/quote-padding-calculator.js
    target only the FIRST .cm-quote span after the formatting element */
@@ -210,7 +216,6 @@ blockquote {
 /* Reset margin for subsequent .cm-quote spans */
 .HyperMD-quote span.cm-quote:not(.cm-formatting-quote, .cm-inline-code) {
     margin-left: 0;
-    padding-right: 0.8rem;
 }
 
 /* Remove padding if any subsequent sibling (including non-adjacent) is .cm-inline-code */
@@ -244,28 +249,44 @@ div:is(
 /* indent the lists to match read mode */
 .markdown-source-view.mod-cm6 .HyperMD-list-line {
     transform: translateX(calc(var(--list-indent-edit-mode) - 25px));
+    padding-right: calc(var(--list-indent-edit-mode) - 25px);
 }
 
 /* modify list elements without bullets (e.g. after hitting shift+enter */
 .markdown-source-view.mod-cm6 .HyperMD-list-line.HyperMD-list-line-nobullet {
-    padding-bottom: 1.6px !important;
+    padding-bottom: 0px !important;
 }
 
 /* modify list elements with bullets */
-.markdown-source-view.mod-cm6 .HyperMD-list-line:not(.HyperMD-list-line-nobullet):has(.cm-formatting.cm-formatting-list .list-bullet) {
+.markdown-source-view.mod-cm6 .HyperMD-list-line:not(
+    .HyperMD-list-line-nobullet
+):has(
+    .cm-formatting.cm-formatting-list .list-bullet
+) {
+    padding-top: 1.6px !important;
+    padding-bottom: 1.6px;
+}
+
+.markdown-source-view.mod-cm6 .HyperMD-list-line:not(.HyperMD-list-line-nobullet):has(+ .HyperMD-list-line-nobullet) {
     padding-bottom: 0px !important;
 }
 
 /* modify list elements with numbers */
 .markdown-source-view.mod-cm6 .HyperMD-list-line:not(.HyperMD-list-line-nobullet):has(.cm-formatting.cm-formatting-list .list-number) {
-    padding-bottom: 0.8px !important;
+    padding-top: 1.6px !important;
+    padding-bottom: 1.8px;
 }
 
 
-/* account for the bullet */
+/* move bullet to the left */
 .cm-formatting.cm-formatting-list .list-bullet {
     transform: translateX(-0.23rem);
     padding-right: 1px;
+}
+
+/* move the line under the bullet to the left as well */
+.cm-hmd-list-indent:has(~ .cm-formatting > .list-bullet) .cm-indent::before {
+    transform: translateX(-0.2rem);
 }
 
 /* move element holding list number */
