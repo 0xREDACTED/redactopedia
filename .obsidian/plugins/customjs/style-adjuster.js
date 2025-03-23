@@ -1,69 +1,75 @@
-/*
- * This script is used to assist in making the editor block quote look the same as in the reader.
- * The editor blockquote contains a '>' symbol. The width of this needs to be accoutned for, so
- * this is calculated here and set to --transparent-span-width, which is used in set-editor-style-to-reader.css
-*/
-
-class QuoteStyleAdjuster {
-
+class StyleAdjuster {
   static canvas = document.createElement('canvas');
 
   async invoke() {
-
     await cJS();
-    
-    // Create measurement element
+
+    await this.adjustQuoteStyle();
+
+    await this.adjustListLinePadding();
+  }
+
+  // calculates and sets the indent that '>' usually takes up in quote blocks
+  async adjustQuoteStyle() {
     const measureSpan = document.createElement('span');
     measureSpan.className = 'cm-transparent';
     measureSpan.textContent = '>';
-    
-    // Create container to inherit proper styles
+
     const container = document.createElement('div');
     container.className = 'HyperMD-quote';
     container.style.position = 'absolute';
     container.style.opacity = '0';
     container.appendChild(measureSpan);
 
-    // Add to DOM temporarily
     document.body.appendChild(container);
-      
-    // Get computed styles
+
     const style = getComputedStyle(measureSpan);
     const fontStr = `${style.fontWeight} ${style.fontSize} ${style.fontFamily}`;
     const quoteCharWidth = this.getTextWidth('>', fontStr) - 1;
-    
-    // Clean up
+
     document.body.removeChild(container);
 
-    // Set global CSS variable
     const styleTagQuote = document.createElement('style');
     styleTagQuote.id = 'quote-padding-override';
     styleTagQuote.textContent = `
-        :root {
-            --transparent-span-width: ${quoteCharWidth}px !important;
-        }
+      :root {
+        --transparent-span-width: ${quoteCharWidth}px !important;
+      }
     `;
 
-    // Remove existing if present
     const existingQuotePaddingOverride = document.getElementById('quote-padding-override');
     if (existingQuotePaddingOverride) existingQuotePaddingOverride.remove();
-    
+
     document.head.appendChild(styleTagQuote);
   }
 
-  /**
-    * Uses canvas.measureText to compute and return the width of the given text of given font in pixels.
-    * 
-    * @param {String} text The text to be rendered.
-    * @param {String} font The css font descriptor that text is to be rendered with (e.g. "bold 14px verdana").
-    * 
-    * @see https://stackoverflow.com/questions/118241/calculate-text-width-with-javascript/21015393#21015393
-  */
+  // removes bottom padding on nested list-line elements (up to 30 nested lists)
+  async adjustListLinePadding() {
+    const styleTagList = document.createElement('style');
+    styleTagList.id = 'list-line-padding-override';
+
+    // Generate CSS rules for levels 1-29
+    let cssRules = '';
+    for (let i = 1; i < 30; i++) {
+      cssRules += `
+        .HyperMD-list-line-${i}:not(.HyperMD-list-line-nobullet):has(+ .HyperMD-list-line-${i + 1}) {
+          padding-bottom: 0 !important;
+        }
+      `;
+    }
+
+    styleTagList.textContent = cssRules;
+
+    // Remove existing if present
+    const existingListPaddingOverride = document.getElementById('list-line-padding-override');
+    if (existingListPaddingOverride) existingListPaddingOverride.remove();
+
+    document.head.appendChild(styleTagList);
+  }
+
   getTextWidth(text, font) {
-    
-    const context = QuoteStyleAdjuster.canvas.getContext("2d");
+    const context = StyleAdjuster.canvas.getContext("2d");
     context.font = font;
     return context.measureText(text).width;
   }
-
 }
