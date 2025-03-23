@@ -4,7 +4,7 @@ tags:
 ---
 The **redactopedia** is a collection of knowledge, architectural preferences, as well tips and tricks for common pitfalls that I have accumulated and built throughout my software career. 
 It is currently divided into two main sections:
-### 🧠 Knowledge
+## 🧠 Knowledge
 As the name suggests, the knowledge section contains all (or at least a good chunk) of my software knowledge. It’s currently broken up into the following subcategories (some of which are still empty):
 - 🧑🏼‍💻 **Programming**
 	- Language/framework-specific patterns, architectures, and pitfalls (e.g., C++ move semantics, Java Spring Boot quirks).
