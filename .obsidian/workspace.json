@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "content/index.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
@@ -170,8 +170,8 @@
   "active": "393b5461e55d72de",
   "lastOpenFiles": [
     "content/🧠 Knowledge/🛠️ Tools & Platforms/Secret Management/HashiCorp Vault/Auth Methods.md",
-    "content/index.md",
     "content/🧠 Knowledge/🛠️ Tools & Platforms/Operating Systems/Dual Booting.md",
+    "content/index.md",
     "content/🧠 Knowledge/🛠️ Tools & Platforms/CICD/GitLab CI.md",
     "content/🧠 Knowledge/🧑🏼‍💻 Programming/Languages/C++/Compilation Process.md",
     "content/📝 Projects/GeoForge/Decision logs/2025-02-16 Initial Plans.md",

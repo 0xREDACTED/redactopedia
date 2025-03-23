@@ -4,14 +4,12 @@
 */
 
 :root {
-
     /* Exact 2.03px at 16px base */
     --header-compensation: 0.127rem;
 
     /* should be set to the value of the following (this is used in read mode):
     .markdown-rendered ul > li {margin-inline-start: 3ch;} */
     --list-indent-edit-mode: 3ch;
-
 }
 
 /* handle empty lines */
