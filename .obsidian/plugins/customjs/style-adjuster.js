@@ -47,23 +47,27 @@ class StyleAdjuster {
   async adjustListLinePadding() {
     const styleTagList = document.createElement('style');
     styleTagList.id = 'list-line-padding-override';
-
-    // Generate CSS rules for levels 1-29
+  
     let cssRules = '';
     for (let i = 1; i < 30; i++) {
       cssRules += `
+        /* Add padding to list lines followed by smaller levels (this works because i + more than 1 isn't possible) */
+        .HyperMD-list-line-${i}:not(.HyperMD-list-line-nobullet):has(+ .HyperMD-list-line:not(:is(.HyperMD-list-line-nobullet,.HyperMD-list-line-${i + 1},.HyperMD-list-line-${i}))) {
+          padding-bottom: calc(2 * var(--list-spacing)) !important;
+        }
+  
+        /* Remove padding when next line is deeper */
         .HyperMD-list-line-${i}:not(.HyperMD-list-line-nobullet):has(+ .HyperMD-list-line-${i + 1}) {
           padding-bottom: 0 !important;
         }
       `;
     }
-
+  
     styleTagList.textContent = cssRules;
-
-    // Remove existing if present
+  
     const existingListPaddingOverride = document.getElementById('list-line-padding-override');
     if (existingListPaddingOverride) existingListPaddingOverride.remove();
-
+  
     document.head.appendChild(styleTagList);
   }
 

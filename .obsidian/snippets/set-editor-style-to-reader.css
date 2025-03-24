@@ -231,6 +231,10 @@ blockquote {
 /* #region Lists */
 
 /* lists in the editor directly after text, code and images should have top margin */
+.markdown-source-view.mod-cm6 {
+    --list-spacing: 0.1em !important;
+}
+
 .markdown-source-view.mod-cm6 
 div:is(
     .cm-line:not(.HyperMD-header, .HyperMD-quote, .HyperMD-list-line),  
@@ -250,9 +254,14 @@ div:is(
     padding-right: calc(var(--list-indent-edit-mode) - 25px);
 }
 
-/* modify list elements without bullets (e.g. after hitting shift+enter */
-.markdown-source-view.mod-cm6 .HyperMD-list-line.HyperMD-list-line-nobullet {
+/* remove bottom padding from elements without bullets that don't precede a bulleted list element */
+.markdown-source-view.mod-cm6 .HyperMD-list-line.HyperMD-list-line-nobullet:not(:has(+ .HyperMD-list-line:not(.HyperMD-list-line-nobullet))) {
     padding-bottom: 0px !important;
+}
+
+/* shift elements without a bullet to the right */
+.markdown-source-view.mod-cm6 .HyperMD-list-line-nobullet {
+    transform: translateX(0.35rem);
 }
 
 /* modify list elements with bullets */
@@ -261,8 +270,8 @@ div:is(
 ):has(
     .cm-formatting.cm-formatting-list .list-bullet
 ) {
-    padding-top: 1.6px !important;
-    padding-bottom: 1.6px;
+    padding-top: var(--list-spacing) !important;
+    padding-bottom: var(--list-spacing);
 }
 
 .markdown-source-view.mod-cm6 .HyperMD-list-line:not(.HyperMD-list-line-nobullet):has(+ .HyperMD-list-line-nobullet) {
@@ -270,11 +279,18 @@ div:is(
 }
 
 /* modify list elements with numbers */
-.markdown-source-view.mod-cm6 .HyperMD-list-line:not(.HyperMD-list-line-nobullet):has(.cm-formatting.cm-formatting-list .list-number) {
-    padding-top: 1.6px !important;
-    padding-bottom: 1.8px;
+.markdown-source-view.mod-cm6 .HyperMD-list-line:has(.cm-formatting.cm-formatting-list .list-number) {
+    padding-top: var(--list-spacing) !important;
+    padding-bottom: var(--list-spacing);
 }
 
+.markdown-source-view.mod-cm6 .HyperMD-list-line:has(.cm-formatting.cm-formatting-list .list-number) + .HyperMD-list-line:has(.cm-formatting.cm-formatting-list .list-bullet) {
+    margin-top: var(--p-spacing) !important;
+}
+
+.markdown-source-view.mod-cm6 .HyperMD-list-line:has(.cm-formatting.cm-formatting-list .list-bullet) + .HyperMD-list-line:has(.cm-formatting.cm-formatting-list .list-number)  {
+    margin-top: var(--p-spacing) !important;
+}
 
 /* move bullet to the left */
 .cm-formatting.cm-formatting-list .list-bullet {
@@ -283,8 +299,12 @@ div:is(
 }
 
 /* move the line under the bullet to the left as well */
-.cm-hmd-list-indent:has(~ .cm-formatting > .list-bullet) .cm-indent::before {
-    transform: translateX(-0.2rem);
+.cm-hmd-list-indent:has(~ .cm-formatting > :is(.list-bullet,.list-number)) .cm-indent::before {
+    transform: translateX(-0.2rem) !important;
+}
+
+.HyperMD-list-line-nobullet .cm-hmd-list-indent .cm-indent::before {
+    transform: translateX(-0.24rem) !important;
 }
 
 /* move element holding list number */
