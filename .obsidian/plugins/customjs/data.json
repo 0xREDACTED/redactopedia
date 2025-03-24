@@ -4,6 +4,8 @@
   "startupScriptNames": [
     "StyleAdjuster"
   ],
-  "registeredInvocableScriptNames": [],
+  "registeredInvocableScriptNames": [
+    "StyleAdjuster"
+  ],
   "rerunStartupScriptsOnFileChange": true
 }

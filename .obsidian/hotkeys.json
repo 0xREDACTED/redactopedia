@@ -4,5 +4,11 @@
       "modifiers": [],
       "key": "F8"
     }
+  ],
+  "customjs:invoke-StyleAdjuster": [
+    {
+      "modifiers": [],
+      "key": "F8"
+    }
   ]
 }
