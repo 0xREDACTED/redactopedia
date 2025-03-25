@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/index.md",
-                "mode": "preview",
+                "file": "content/🧠 Knowledge/🛠️ Tools & Platforms/CICD/GitLab CI/Job Images from Private Repositories.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "Job Images from Private Repositories"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/index.md",
+                "file": "content/🧠 Knowledge/🛠️ Tools & Platforms/CICD/GitLab CI/Job Images from Private Repositories.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of index"
+              "title": "Outline of Job Images from Private Repositories"
             }
           }
         ],
@@ -169,10 +169,16 @@
   },
   "active": "393b5461e55d72de",
   "lastOpenFiles": [
+    "content/🧠 Knowledge/🛠️ Tools & Platforms/CICD/GitLab CI/Input Arrays.md",
+    "content/🧠 Knowledge/🛠️ Tools & Platforms/CICD/GitLab CI/Capturing Exit Statuses.md",
+    "content/🧠 Knowledge/🛠️ Tools & Platforms/CICD/GitLab CI/Dynamic Parallel Jobs.md",
+    "content/🧠 Knowledge/🛠️ Tools & Platforms/CICD/GitLab CI/Job Images from Private Repositories.md",
     "content/🧠 Knowledge/🛠️ Tools & Platforms/Operating Systems/Dual Booting.md",
     "content/index.md",
     "content/🧠 Knowledge/🛠️ Tools & Platforms/Secret Management/HashiCorp Vault/Auth Methods.md",
+    "GitLab CI.md",
     "content/🧠 Knowledge/🛠️ Tools & Platforms/CICD/GitLab CI.md",
+    "content/🧠 Knowledge/🛠️ Tools & Platforms/CICD/GitLab CI",
     "content/🧠 Knowledge/🧑🏼‍💻 Programming/Languages/C++/Compilation Process.md",
     "content/📝 Projects/GeoForge/Decision logs/2025-02-16 Initial Plans.md",
     "image.md",
@@ -197,14 +203,8 @@
     "content/🧠 Knowledge/🛡️ Cybersecurity/Cryptography",
     "content/🧠 Knowledge/🛡️ Cybersecurity/Hacking",
     "content/🧠 Knowledge/🛡️ Cybersecurity",
-    "content/Knowledge/Tools & Platforms/Operating Systems/Dual Booting.md",
-    "content/🧠 Knowledge/🛠️ Tools & Platforms/Operating Systems/Windows/placeholder.md",
-    "content/🧠 Knowledge/🛠️ Tools & Platforms/Operating Systems/Ubuntu/placeholder.md",
-    "content/🧠 Knowledge/🛠️ Tools & Platforms/Containerisation/Kubernetes/placeholder.md",
-    "content/🧠 Knowledge/🛠️ Tools & Platforms/Containerisation/Docker/placeholder.md",
     "content/🧠 Knowledge/🛠️ Tools & Platforms/Secret Management/HashiCorp Vault",
     "content/🧠 Knowledge/🛠️ Tools & Platforms/Operating Systems/Windows",
-    "content/🧠 Knowledge/🛠️ Tools & Platforms/Operating Systems/Ubuntu",
     "content/_images/Knowledge/Tools & Platforms/CICD/parallel-matrix.png",
     "public/static/og-image.png",
     "public/static/icon.png",
