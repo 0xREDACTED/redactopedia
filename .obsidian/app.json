@@ -9,5 +9,7 @@
   ],
   "alwaysUpdateLinks": true,
   "attachmentFolderPath": "content/_images",
-  "readableLineLength": true
+  "readableLineLength": true,
+  "useTab": true,
+  "tabSize": 2
 }
