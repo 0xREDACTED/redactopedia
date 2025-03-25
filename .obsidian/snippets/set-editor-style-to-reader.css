@@ -259,11 +259,6 @@ div:is(
     padding-bottom: 0px !important;
 }
 
-/* shift elements without a bullet to the right */
-.markdown-source-view.mod-cm6 .HyperMD-list-line-nobullet {
-    transform: translateX(0.35rem);
-}
-
 /* modify list elements with bullets */
 .markdown-source-view.mod-cm6 .HyperMD-list-line:not(
     .HyperMD-list-line-nobullet
@@ -298,13 +293,9 @@ div:is(
     padding-right: 1px;
 }
 
-/* move the line under the bullet to the left as well */
-.cm-hmd-list-indent:has(~ .cm-formatting > :is(.list-bullet,.list-number)) .cm-indent::before {
+/* move the line under the bullets to the left as well */
+.HyperMD-list-line .cm-hmd-list-indent .cm-indent::before {
     transform: translateX(-0.2rem) !important;
-}
-
-.HyperMD-list-line-nobullet .cm-hmd-list-indent .cm-indent::before {
-    transform: translateX(-0.24rem) !important;
 }
 
 /* move element holding list number */
