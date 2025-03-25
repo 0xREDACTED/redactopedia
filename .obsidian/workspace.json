@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/🧠 Knowledge/🧑🏼‍💻 Programming/Languages/Java/Project layout/Java Springboot Project Layout.md",
+                "file": "content/🧠 Knowledge/🧑🏼‍💻 Programming/Languages/C++/Compilation Process.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Java Springboot Project Layout"
+              "title": "Compilation Process"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/🧠 Knowledge/🧑🏼‍💻 Programming/Languages/Java/Project layout/Java Springboot Project Layout.md",
+                "file": "content/🧠 Knowledge/🧑🏼‍💻 Programming/Languages/C++/Compilation Process.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Java Springboot Project Layout"
+              "title": "Outline of Compilation Process"
             }
           }
         ],
@@ -169,19 +169,19 @@
   },
   "active": "393b5461e55d72de",
   "lastOpenFiles": [
+    "content/🧠 Knowledge/🛠️ Tools & Platforms/Secret Management/HashiCorp Vault/Auth Methods.md",
+    "content/🧠 Knowledge/🛠️ Tools & Platforms/Operating Systems/Dual Booting.md",
+    "content/🧠 Knowledge/🛠️ Tools & Platforms/CLI Tools/git/Git Commit History.md",
+    "content/🧠 Knowledge/🛠️ Tools & Platforms/CICD/GitLab CI/Capturing Exit Statuses.md",
+    "content/🧠 Knowledge/🛠️ Tools & Platforms/CICD/GitLab CI/Dynamic Parallel Jobs.md",
+    "content/🧠 Knowledge/🛠️ Tools & Platforms/CICD/GitLab CI/Input Arrays.md",
+    "content/🧠 Knowledge/🛠️ Tools & Platforms/CICD/GitLab CI/Job Images from Private Repositories.md",
+    "content/🧠 Knowledge/🧑🏼‍💻 Programming/Languages/Java/Project layout/Java Springboot Project Layout.md",
     "customisations/quartz/styles/custom.scss",
     "customisations/quartz/styles",
     "customisations/quartz/New folder",
-    "content/🧠 Knowledge/🛠️ Tools & Platforms/Secret Management/HashiCorp Vault/Auth Methods.md",
-    "content/🧠 Knowledge/🛠️ Tools & Platforms/CLI Tools/git/Git Commit History.md",
     "content/index.md",
-    "content/🧠 Knowledge/🧑🏼‍💻 Programming/Languages/Java/Project layout/Java Springboot Project Layout.md",
-    "content/🧠 Knowledge/🛠️ Tools & Platforms/CICD/GitLab CI/Job Images from Private Repositories.md",
     "content/🧠 Knowledge/🧑🏼‍💻 Programming/Languages/C++/Compilation Process.md",
-    "content/🧠 Knowledge/🛠️ Tools & Platforms/CICD/GitLab CI/Capturing Exit Statuses.md",
-    "content/🧠 Knowledge/🛠️ Tools & Platforms/Operating Systems/Dual Booting.md",
-    "content/🧠 Knowledge/🛠️ Tools & Platforms/CICD/GitLab CI/Input Arrays.md",
-    "content/🧠 Knowledge/🛠️ Tools & Platforms/CICD/GitLab CI/Dynamic Parallel Jobs.md",
     "content/🧠 Knowledge/🧑🏼‍💻 Programming/Languages/Java/Project layout",
     "content/🧠 Knowledge/🧑🏼‍💻 Programming/Languages/Java/Frameworks/Java Springboot/Java Springboot Project Layout.md",
     "content/🧠 Knowledge/🧑🏼‍💻 Programming/Languages/Java/Frameworks/Java Springboot",
@@ -198,7 +198,6 @@
     "content/🧠 Knowledge/⛓️ Blockchain/placeholder.md",
     "content/🧠 Knowledge/🖥️ Systems Programming/OS architecture/placeholder.md",
     "content/🧠 Knowledge/🤖 Artificial Intelligence/Untitled",
-    "content/🧠 Knowledge/⛓️ Blockchain",
     "content/🧠 Knowledge/🖥️ Systems Programming/Language Processors/Pieces of the puzzle/Pre-processors.md",
     "content/🧠 Knowledge/🖥️ Systems Programming/Language Processors/Pieces of the puzzle/Linkers.md",
     "content/🧠 Knowledge/🖥️ Systems Programming/Language Processors/Pieces of the puzzle/JIT Compilers.md",

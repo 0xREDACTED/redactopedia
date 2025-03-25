@@ -11,14 +11,14 @@ Luckily, this script can be used to replace all commits with the desired usernam
 
 ```bash
 git filter-branch --commit-filter '
-  if [ "$GIT_AUTHOR_EMAIL" = "<INCORRECT EMAIL>" ];
-  then
-    GIT_AUTHOR_NAME="<NEW AUTHOR>";
-    GIT_AUTHOR_EMAIL="<NEW EMAIL>";
-    git commit-tree "$@";
-  else
-    git commit-tree "$@";
-  fi' HEAD
+	if [ "$GIT_AUTHOR_EMAIL" = "<INCORRECT EMAIL>" ];
+	then
+		GIT_AUTHOR_NAME="<NEW AUTHOR>";
+		GIT_AUTHOR_EMAIL="<NEW EMAIL>";
+		git commit-tree "$@";
+	else
+		git commit-tree "$@";
+	fi' HEAD
 ```
 
 ## Deleting commit history
