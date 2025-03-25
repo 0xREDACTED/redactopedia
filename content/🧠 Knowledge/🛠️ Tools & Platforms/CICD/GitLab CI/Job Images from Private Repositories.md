@@ -28,11 +28,11 @@ printf "my_username:my_password" | openssl base64 -A
 2. This will give you some base64 encoded string which you will then use to create something that looks like:
 ```json
 {
-  "auths": {
-    "private-registry.example.com:5000": {
-      "auth": "bXlfdXNlcm5hbWU6bXlfcGFzc3dvcmQ="
-    }
-  }
+	"auths": {
+		"private-registry.example.com:5000": {
+			"auth": "bXlfdXNlcm5hbWU6bXlfcGFzc3dvcmQ="
+		}
+	}
 }
 ```
 
@@ -42,11 +42,11 @@ printf "my_username:my_password" | openssl base64 -A
 4. Create another variable named `$DOCKER_AUTH_CONFIG` that contains the following which references the previous variable. **DO NOT** have `Expand variable reference` selected
 ``` json
 {
-  "auths": {
-    "private-registry.example.com:5000": {
-      "auth": "$DOCKER_AUTH_CONFIG"
-    }
-  }
+	"auths": {
+		"private-registry.example.com:5000": {
+		"auth": "$DOCKER_AUTH_CONFIG"
+		}
+	}
 }
 ```
 5. Create a job that uses the registry and run your pipeline - it should pull the image successfully.

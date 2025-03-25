@@ -20,7 +20,7 @@ Another example involving the capturing of an exit is:
 ```bash frame="none"
 kubectl get pods | grep "something"
 if [ $? -eq 1 ]; then
-  echo "Couldn't find something!"
+	echo "Couldn't find something!"
 fi
 ```
 One would expect the if statement to be triggered if no pod with `"something"` in their name were present. However, the pipeline will fail before reaching the if statement. 
@@ -28,7 +28,7 @@ In order to do this, the exit status needs to be stored on the same line like so
 ```bash frame="none"
 return_code=0; kubectl get pods | grep "something" || return_code=$?
 if [ $return_code -eq 1 ]; then
-  echo "couldn't find something!"
+	echo "couldn't find something!"
 fi
 ```
 We can also of course get output and the exit status simultaneously:
