@@ -44,11 +44,11 @@ The config folder contains configuration classes, annotated with `@Configuration
 public class RestClientConfig {
 
 	@Bean
-  public RestClient defaultRestClient(RestClient.Builder builder) {
-	  return builder
-	    .baseUrl("http://example.com:8080/api/v1")
-      .build();
-  }
+	public RestClient defaultRestClient(RestClient.Builder builder) {
+		return builder
+			.baseUrl("http://example.com:8080/api/v1")
+			.build();
+	}
 }
 ```
 This could then be used throughout the code like so
@@ -60,10 +60,10 @@ public class MyService {
 
 	private final RestClient restClient;
 
-  public String fetchData() {
-	  return restClient.get()
-	    .uri("/data") // Resolves to http://example.com:8080/api/v1/data
-	    .retrieve()
+	public String fetchData() {
+		return restClient.get()
+			.uri("/data") // Resolves to http://example.com:8080/api/v1/data
+			.retrieve()
 			.body(String.class);
   }
 }
@@ -78,9 +78,9 @@ public class UserController {
 
 	private final UserService userService;
 
-  @GetMapping("/{id}")
-  public ResponseEntity<UserDto> getUser(@PathVariable Long id) {
-	  return ResponseEntity.ok(userService.getUserById(id));
+	@GetMapping("/{id}")
+	public ResponseEntity<UserDto> getUser(@PathVariable Long id) {
+		return ResponseEntity.ok(userService.getUserById(id));
 	}
 }
 ```
@@ -93,13 +93,13 @@ The dto folder contains DTO classes that define the request and response objects
 public class UserDto {
 
 	@Schema(description = "The ID of the user", example = "3")
-  private Long id;
+	private Long id;
 
 	@Schema(description = "The user's name", example = "0xREDACTED")
-  private String name;
+	private String name;
 
 	@Schema(description = "the user's email", example = "redacted@example.com")
-  private String email;
+	private String email;
 }
 ```
 ### Entity
@@ -110,15 +110,15 @@ The entity folder contains the JPA entities that map to database tables, annotat
 @Data
 public class User {
     
-  @Id
-  @GeneratedValue(strategy = GenerationType.IDENTITY)
-  private Long id;
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
 
 	@NotNull
-  private String name;
+	private String name;
   
-  @NotNull
-  private String email;
+	@NotNull
+	private String email;
 }
 ```
 ### Exception
@@ -126,7 +126,7 @@ Contains custom exception classes and global exception handlers. For example, an
 ```java
 public class UserNotFoundException extends RuntimeException {
 	public UserNotFoundException(Long id) {
-	  super("User not found with ID: " + id);
+		super("User not found with ID: " + id);
 	}
 }
 ```
@@ -135,9 +135,9 @@ And an exception handler:
 @RestControllerAdvice
 public class GlobalExceptionHandler {
 
-  @ExceptionHandler(UserNotFoundException.class)
+	@ExceptionHandler(UserNotFoundException.class)
 	public ResponseEntity<String> handleUserNotFoundException(UserNotFoundException ex) {
-	  return ResponseEntity.status(HttpStatus.NOT_FOUND).body(ex.getMessage());
+		return ResponseEntity.status(HttpStatus.NOT_FOUND).body(ex.getMessage());
 	}
 }
 ```
@@ -172,15 +172,15 @@ public class UserDao {
 	private final EntityManager entityManager;
 
   public List<User> findUsersWithMoreThanNTasks(int taskCount) {
-    String sql = "SELECT u.* FROM user u " +
-							   "JOIN task t ON u.id = t.user_id " +
-                 "GROUP BY u.id " +
-                 "HAVING COUNT(t.id) > :taskCount";
-        
+	  String sql = "SELECT u.* FROM user u " +
+								 "JOIN task t ON u.id = t.user_id " +
+								 "GROUP BY u.id " +
+								 "HAVING COUNT(t.id) > :taskCount";
+								 
 		Query query = entityManager.createNativeQuery(sql, User.class);
-    query.setParameter("taskCount", taskCount);
+		query.setParameter("taskCount", taskCount);
 
-    return query.getResultList();
+		return query.getResultList();
 	}
 }
 ```
@@ -193,20 +193,20 @@ The service layer is where the business logic of the application lives, annotate
 public class UserService {
 
 	private final UserRepository userRepository;
-  private final TaskRepository taskRepository;
+	private final TaskRepository taskRepository;
 
   @Transactional
   public User createUserWithTask(String userName, String taskDescription) {
-	  User newUser = new User();
-    newUser.setName(userName);
-    userRepository.save(newUser);
+		User newUser = new User();
+		newUser.setName(userName);
+		userRepository.save(newUser);
 
-    Task newTask = new Task();
-    newTask.setDescription(taskDescription);
-    newTask.setUser(newUser);
-    taskRepository.save(newTask);
-        
-    return newUser;
+		Task newTask = new Task();
+		newTask.setDescription(taskDescription);
+		newTask.setUser(newUser);
+		taskRepository.save(newTask);
+      
+		return newUser;
 	}
 }
 ```
@@ -221,7 +221,7 @@ public class DateUtils {
 	private DateUtils() {}
 	
 	public static String formatDate(LocalDateTime dateTime) {
-	  return dateTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
-  }
+		return dateTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+	}
 }
 ```
