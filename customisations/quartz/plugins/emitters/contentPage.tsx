@@ -56,14 +56,19 @@ const parseDependencies = (argv: Argv, hast: Root, file: VFile): string[] => {
 }
 
 export const ContentPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (userOpts) => {
-  let opts: FullPageLayout = {
+
+  // Define base options outside emit function - this is needed for component registration
+  // We need this because getQuartzComponents() needs access to these components
+  // before any page-specific processing happens
+  const baseOpts: FullPageLayout = {
     ...sharedPageComponents,
     ...defaultContentPageLayout,
     pageBody: Content(),
     ...userOpts,
   }
 
-  const { head: Head, header, beforeBody, pageBody, afterBody, left, right, footer: Footer } = opts
+  // Destructure components from base opts
+  const { head: Head, header, beforeBody, pageBody, afterBody, left, right, footer: Footer } = baseOpts
   const Header = HeaderConstructor()
   const Body = BodyConstructor()
 
@@ -106,9 +111,25 @@ export const ContentPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (userOp
       let containsIndex = false
       for (const [tree, file] of content) {
         const slug = file.data.slug!
+
+        // Create fresh page-specific options for each file
+        // This prevents the index layout settings from "leaking" to other pages
+        // even when emoji characters in folder names affect slug processing
+        // When folder names contain emojis, they can affect how slugs are processed
+        // because emojis are actually multiple Unicode characters combined.
+        // This can cause the index page check (slug === "index") to behave unexpectedly
+        // if we reuse the same opts object across multiple pages.
+        let pageOpts: FullPageLayout = {
+          ...sharedPageComponents,
+          ...defaultContentPageLayout,
+          pageBody: Content(),
+          ...userOpts,
+        }
+
+        // use different opts for index page
         if (slug === "index") {
           containsIndex = true
-          opts = {
+          pageOpts = {
             ...sharedPageComponents,
             ...indexContentPageLayout,
             pageBody: Content(),
@@ -127,7 +148,7 @@ export const ContentPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (userOp
           allFiles,
         }
 
-        const content = renderPage(cfg, slug, componentData, opts, externalResources)
+        const content = renderPage(cfg, slug, componentData, pageOpts, externalResources)
         const fp = await write({
           ctx,
           content,

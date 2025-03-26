@@ -59,7 +59,8 @@ export const indexContentPageLayout: PageLayout = {
       localGraph: {
         depth: -1,
         enableRadial: true
-      },globalGraph: {
+      },
+      globalGraph: {
         enableRadial: false
       },
     }),
