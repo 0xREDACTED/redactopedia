@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/🧠 Knowledge/🧑🏼‍💻 Programming/Languages/C++/Compilation Process.md",
+                "file": "content/🧠 Knowledge/🛠️ Tools & Platforms/CICD/GitLab CI/Job Images from Private Repositories.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Compilation Process"
+              "title": "Job Images from Private Repositories"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/🧠 Knowledge/🧑🏼‍💻 Programming/Languages/C++/Compilation Process.md",
+                "file": "content/🧠 Knowledge/🛠️ Tools & Platforms/CICD/GitLab CI/Job Images from Private Repositories.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Compilation Process"
+              "title": "Outline of Job Images from Private Repositories"
             }
           }
         ],
@@ -169,19 +169,22 @@
   },
   "active": "393b5461e55d72de",
   "lastOpenFiles": [
-    "content/🧠 Knowledge/🛠️ Tools & Platforms/Secret Management/HashiCorp Vault/Auth Methods.md",
-    "content/🧠 Knowledge/🛠️ Tools & Platforms/Operating Systems/Dual Booting.md",
-    "content/🧠 Knowledge/🛠️ Tools & Platforms/CLI Tools/git/Git Commit History.md",
-    "content/🧠 Knowledge/🛠️ Tools & Platforms/CICD/GitLab CI/Capturing Exit Statuses.md",
-    "content/🧠 Knowledge/🛠️ Tools & Platforms/CICD/GitLab CI/Dynamic Parallel Jobs.md",
-    "content/🧠 Knowledge/🛠️ Tools & Platforms/CICD/GitLab CI/Input Arrays.md",
+    "content/_images/Knowledge/Tools & Platforms/CICD/Pasted image 20250326191534.png",
+    "content/_images/Knowledge/Tools & Platforms/CICD/visible-and-expanded-variable-reference-variable.png",
     "content/🧠 Knowledge/🛠️ Tools & Platforms/CICD/GitLab CI/Job Images from Private Repositories.md",
+    "content/_images/Knowledge/Tools & Platforms/CICD/masked-and-hidden-variable.png",
+    "content/🧠 Knowledge/🛠️ Tools & Platforms/CICD/GitLab CI/Input Arrays.md",
+    "content/🧠 Knowledge/🛠️ Tools & Platforms/CICD/GitLab CI/Dynamic Parallel Jobs.md",
+    "content/🧠 Knowledge/🛠️ Tools & Platforms/CICD/GitLab CI/Capturing Exit Statuses.md",
+    "content/index.md",
+    "content/🧠 Knowledge/🛠️ Tools & Platforms/Secret Management/HashiCorp Vault/Auth Methods.md",
+    "content/🧠 Knowledge/🛠️ Tools & Platforms/CLI Tools/git/Git Commit History.md",
+    "content/🧠 Knowledge/🧑🏼‍💻 Programming/Languages/C++/Compilation Process.md",
     "content/🧠 Knowledge/🧑🏼‍💻 Programming/Languages/Java/Project layout/Java Springboot Project Layout.md",
+    "content/🧠 Knowledge/🛠️ Tools & Platforms/Operating Systems/Dual Booting.md",
     "customisations/quartz/styles/custom.scss",
     "customisations/quartz/styles",
     "customisations/quartz/New folder",
-    "content/index.md",
-    "content/🧠 Knowledge/🧑🏼‍💻 Programming/Languages/C++/Compilation Process.md",
     "content/🧠 Knowledge/🧑🏼‍💻 Programming/Languages/Java/Project layout",
     "content/🧠 Knowledge/🧑🏼‍💻 Programming/Languages/Java/Frameworks/Java Springboot/Java Springboot Project Layout.md",
     "content/🧠 Knowledge/🧑🏼‍💻 Programming/Languages/Java/Frameworks/Java Springboot",
@@ -211,9 +214,6 @@
     "public/_images/Projects/GeoForge/Decision-logs/honours-project-app-output-1.png",
     "public/_images/Knowledge/Tools--and--Platforms/CICD/parallel-matrix.png",
     "content/_images/Projects/GeoForge/Decision logs/honours-project-app-output-2.png",
-    "content/_images/Projects/GeoForge/Decision logs/honours-project-app-output-1.png",
-    "public/images/Projects/GeoForge/Decision-logs/honours-project-app-output-2.png",
-    "public/images/Projects/GeoForge/Decision-logs/honours-project-app-output-1.png",
     "Untitled.canvas"
   ]
 }
