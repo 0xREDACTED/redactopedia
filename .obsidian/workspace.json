@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/📝 Projects/GeoForge/Decision logs/2025-02-16 Initial Plans.md",
+                "file": "content/🧠 Knowledge/🛠️ Tools & Platforms/CICD/GitLab CI/Job Images from Private Repositories.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-02-16 Initial Plans"
+              "title": "Job Images from Private Repositories"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/📝 Projects/GeoForge/Decision logs/2025-02-16 Initial Plans.md",
+                "file": "content/🧠 Knowledge/🛠️ Tools & Platforms/CICD/GitLab CI/Job Images from Private Repositories.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-02-16 Initial Plans"
+              "title": "Outline of Job Images from Private Repositories"
             }
           }
         ],
@@ -167,35 +167,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9e28c5c34f5a9a61",
+  "active": "393b5461e55d72de",
   "lastOpenFiles": [
     "content/index.md",
+    "content/🧠 Knowledge/🛠️ Tools & Platforms/CICD/GitLab CI/Job Images from Private Repositories.md",
+    "content/🧠 Knowledge/🛠️ Tools & Platforms/Operating Systems/Dual Booting.md",
+    "content/🧠 Knowledge/🛠️ Tools & Platforms/Secret Management/HashiCorp Vault/Auth Methods.md",
+    "content/📝 Projects/GeoForge/Decision logs/2025-02-16 Initial Plans.md",
+    "content/🧠 Knowledge/🧑🏼‍💻 Programming/Languages/Java/Project layout/Java Springboot Project Layout.md",
+    "content/🧠 Knowledge/🛠️ Tools & Platforms/CICD/GitLab CI/Capturing Exit Statuses.md",
+    "content/🧠 Knowledge/🛠️ Tools & Platforms/CICD/GitLab CI/Dynamic Parallel Jobs.md",
+    "customisations/quartz/util/path.ts",
+    "customisations/quartz/util",
+    "util/path.ts",
+    "util",
+    "customisations/quartz/components/pages/FolderContent.tsx",
+    "customisations/quartz/components/pages",
+    "customisations/quartz/components",
+    "customisations/quartz/plugins/emitters/folderPage.tsx",
     "customisations/quartz/styles/custom.scss",
     "customisations/quartz/styles",
-    "styles/custom.scss",
-    "styles",
-    "content/🧠 Knowledge/🧑🏼‍💻 Programming/Languages/Java/Project layout/Java Springboot Project Layout.md",
     "content/🧠 Knowledge/🧑🏼‍💻 Programming/Languages/C++/Compilation Process.md",
-    "content/🧠 Knowledge/🛠️ Tools & Platforms/CICD/GitLab CI/Job Images from Private Repositories.md",
     "content/_images/Knowledge/Tools & Platforms/CICD/Pasted image 20250326191534.png",
     "content/_images/Knowledge/Tools & Platforms/CICD/visible-and-expanded-variable-reference-variable.png",
     "content/_images/Knowledge/Tools & Platforms/CICD/masked-and-hidden-variable.png",
     "content/🧠 Knowledge/🛠️ Tools & Platforms/CICD/GitLab CI/Input Arrays.md",
-    "content/🧠 Knowledge/🛠️ Tools & Platforms/CICD/GitLab CI/Dynamic Parallel Jobs.md",
-    "content/🧠 Knowledge/🛠️ Tools & Platforms/CICD/GitLab CI/Capturing Exit Statuses.md",
-    "content/🧠 Knowledge/🛠️ Tools & Platforms/Secret Management/HashiCorp Vault/Auth Methods.md",
     "content/🧠 Knowledge/🛠️ Tools & Platforms/CLI Tools/git/Git Commit History.md",
-    "content/🧠 Knowledge/🛠️ Tools & Platforms/Operating Systems/Dual Booting.md",
-    "customisations/quartz/New folder",
-    "content/🧠 Knowledge/🧑🏼‍💻 Programming/Languages/Java/Project layout",
     "content/🧠 Knowledge/🧑🏼‍💻 Programming/Languages/Java/Frameworks/Java Springboot/Java Springboot Project Layout.md",
-    "content/🧠 Knowledge/🧑🏼‍💻 Programming/Languages/Java/Frameworks/Java Springboot",
-    "content/🧠 Knowledge/🧑🏼‍💻 Programming/Languages/Java/Frameworks",
-    "content/🧠 Knowledge/🧑🏼‍💻 Programming/Languages/Java",
-    "content/🧠 Knowledge/🧑🏼‍💻 Programming/Untitled",
     "GitLab CI.md",
     "content/🧠 Knowledge/🛠️ Tools & Platforms/CICD/GitLab CI.md",
-    "content/📝 Projects/GeoForge/Decision logs/2025-02-16 Initial Plans.md",
     "image.md",
     "README.md",
     "content/🧠 Knowledge/🤖 Artificial Intelligence/placeholder.md",

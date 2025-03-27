@@ -16,6 +16,7 @@ As the name suggests, the knowledge section contains all (or at least a good chu
 	- Offensive/defensive security, cryptography, reverse-engineering and ethical hacking
 - 🤖 **Artificial Intelligence**
 	- Core concepts (neural networks, ethics) and practical implementations (Python, TensorFlow) with tool integrations
+	  test
 - ⛓️ **Blockchain** 
 	- Foundations (consensus, proof of work) and code (Solidity / Rust smart contracts) with platform-specific guides.
 ### 📝 Projects
