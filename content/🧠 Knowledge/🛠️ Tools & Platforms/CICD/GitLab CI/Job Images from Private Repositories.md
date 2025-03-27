@@ -28,9 +28,12 @@ To define the auth credentials via the GitLab CI/CD variables, the following ste
 	printf "my_username:my_access_token" | openssl base64 -A
 	 ```
 2. Create a secret within your CI/CD settings (at the project or group level) with the name `$DOCKER_AUTH_CONFIG_TOKEN` and the base64 encoded string as the variable. Make sure to set the following settings
+   
    ![[masked-and-hidden-variable.png|250]]
 3. Create another variable named `$DOCKER_AUTH_CONFIG` containing the value below. First set the following settings to allow for variable expansion:
+   
    ![[visible-and-expanded-variable-reference-variable.png|250]]
+   
    Then set the following value:
 	```json
 	{

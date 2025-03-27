@@ -26,10 +26,10 @@
 
 /* remove padding from editor headers */
 .markdown-source-view.mod-cm6 .HyperMD-header {
-    padding-top: 0 !important;
+    margin-top: 0 !important;
 }
 
-/* headers in the editor directly after text, code and images should have top margin */
+/* headers in the editor directly after text, code and images should have top padding */
 .markdown-source-view.mod-cm6 
 div:is(
     .cm-line:not(.HyperMD-header, .HyperMD-quote),  
@@ -40,23 +40,24 @@ div:is(
     .image-embed,                   
     .is-loaded,                     
 ) + div.HyperMD-header {
-    margin-top: calc(var(--heading-spacing) - var(--header-compensation)) !important;
+    padding-top: calc(var(--heading-spacing) - var(--header-compensation)) !important;
 }
 
 /* handle headers after a quote block */
 .markdown-source-view.mod-cm6  .HyperMD-quote + .HyperMD-header {
-    margin-top: calc(16px - var(--header-compensation)) !important;
+    padding-top: calc(16px - var(--header-compensation)) !important;
 }
 
-/* apply margin to bottom of the first header if there is nothing before it
+/* remove top padding & apply padding to bottom of the first header if there is nothing before it
    (the first child is actually <div contenteditable="false"></div>) */
 .cm-content > div:nth-child(2).HyperMD-header {
-    margin-bottom: calc(var(--p-spacing)) !important;
+    padding-top: 0 !important;
+    padding-bottom: calc(var(--p-spacing)) !important;
 }
 
-/* apply different margin to bottom of every other header that has a non-header element after it*/
+/* apply different padding to bottom of every other header that has a non-header element after it*/
 .cm-content > div:not(:nth-child(2)).HyperMD-header:has(+ div.cm-line:not(.HyperMD-header)) {
-    margin-bottom: calc(var(--p-spacing) - var(--header-compensation)) !important;
+    padding-bottom: calc(var(--p-spacing) - var(--header-compensation)) !important;
 }
 
 /* fix header letter spacing */
@@ -148,19 +149,19 @@ div:is(
     line-height: calc(var(--h6-line-height) + 0.4) !important;
 }
 
-/* adjust header's bottom margin if directly followed by another header  */
+/* adjust header's bottom padding if directly followed by another header  */
 .markdown-source-view.mod-cm6 .HyperMD-header:has(+ .HyperMD-header) {
-    margin-bottom: calc(var(--p-spacing) - 0.005rem) !important;
+    padding-bottom: calc(var(--p-spacing) - 0.005rem) !important;
 }
 
-/* adjust h1 bottom margin if it has another header after it (it's different to other headers) */
+/* adjust h1 bottom padding if it has another header after it (it's different to other headers) */
 .markdown-source-view.mod-cm6 :not(.HyperMD-header) + .HyperMD-header-1:has(+ .HyperMD-header) {
-    margin-bottom: calc(var(--p-spacing) - 0.13rem) !important;
+    padding-bottom: calc(var(--p-spacing) - 0.13rem) !important;
 }
 
 /* account for the case where h1 has a h1 directly after */
 .markdown-source-view.mod-cm6 :not(.HyperMD-header) + .HyperMD-header-1:has(+ .HyperMD-header-1) {
-    margin-bottom: calc(var(--p-spacing) - 0.25rem) !important;
+    padding-bottom: calc(var(--p-spacing) - 0.25rem) !important;
 }
 
 /* could not figure out how to account for something like h1 -> h1 -> h1 -> etc etc */
@@ -174,20 +175,22 @@ figcaption.header {
     display: none !important;
 }
 
-/* apply bottom margin to text (that isn't empty) above code blocks */
+/* apply bottom padding to text (that isn't empty) above code blocks */
 .markdown-source-view.mod-cm6 .cm-content > div.cm-line:has(+ div:is(.cm-preview-code-block, .cm-embed-block)):not(:has(> br:only-child)) {
-    margin-bottom: var(--p-spacing) !important;
+    padding-bottom: var(--p-spacing) !important;
 }
 
-/* apply tp margin to text (that isn't empty) below code blocks */
+/* apply top padding to text (that isn't empty) below code blocks */
 .markdown-source-view.mod-cm6 .cm-content > div:is(.cm-preview-code-block, .cm-embed-block) + div.cm-line:not(.HyperMD-header):not(:has(> br:only-child)) {
-    margin-top: var(--p-spacing) !important;
+    padding-top: var(--p-spacing) !important;
 }
 
 /* make code in headers looks the same as in reader mode */
 .HyperMD-header > span.cm-inline-code {
     font-size: var(--code-size) !important;
 }
+
+/* https://forum.obsidian.md/t/live-preview-better-support-of-code-blocks-in-lists/31352/44?u=mo0nman */
 
 /* #endregion */
 
@@ -205,15 +208,15 @@ blockquote {
 }
 
 /* handle block quotes. This makes use of some js at
-   .obsidian/plugins/customjs/quote-padding-calculator.js
+   .obsidian/plugins/customjs/style-adjutser.js
    target only the FIRST .cm-quote span after the formatting element */
 .HyperMD-quote .cm-formatting-quote + span.cm-quote:not(.cm-inline-code) {
-    margin-left: calc(var(--size-4-6) - var(--transparent-span-width, 0px));
+    padding-left: calc(var(--size-4-6) - var(--transparent-span-width, 0px));
 }
 
-/* Reset margin for subsequent .cm-quote spans */
+/* Reset padding for subsequent .cm-quote spans */
 .HyperMD-quote span.cm-quote:not(.cm-formatting-quote, .cm-inline-code) {
-    margin-left: 0;
+    padding-left: 0;
 }
 
 /* Remove padding if any subsequent sibling (including non-adjacent) is .cm-inline-code */
@@ -235,17 +238,15 @@ blockquote {
     --list-spacing: 0.1em !important;
 }
 
-.markdown-source-view.mod-cm6 
-div:is(
-    .cm-line:not(.HyperMD-header, .HyperMD-quote, .HyperMD-list-line),  
-    .cm-preview-code-block,         
-    .cm-embed-block,                
-    .internal-embed,                
-    .media-embed,                   
-    .image-embed,                   
-    .is-loaded,                     
-) + .HyperMD-list-line {
-    margin-top: calc(var(--p-spacing)) !important;
+/* empty lines in lists need to be accounted for */
+.markdown-source-view.mod-cm6 .HyperMD-list-line-nobullet:not(:has(span[class^="cm-list-"])) {
+    line-height: calc(var(--p-spacing) + 0.01rem) !important;
+}
+
+
+/* apply top padding to list elements after a non list element */
+.markdown-source-view.mod-cm6 :not(.HyperMD-list-line) + .HyperMD-list-line {
+    padding-top: var(--p-spacing) !important;
 }
 
 /* indent the lists to match read mode */
@@ -254,37 +255,19 @@ div:is(
     padding-right: calc(var(--list-indent-edit-mode) - 25px);
 }
 
-/* remove bottom padding from elements without bullets that don't precede a bulleted list element */
-.markdown-source-view.mod-cm6 .HyperMD-list-line.HyperMD-list-line-nobullet:not(:has(+ .HyperMD-list-line:not(.HyperMD-list-line-nobullet))) {
-    padding-bottom: 0px !important;
-}
-
-/* modify list elements with bullets */
-.markdown-source-view.mod-cm6 .HyperMD-list-line:not(
-    .HyperMD-list-line-nobullet
-):has(
-    .cm-formatting.cm-formatting-list .list-bullet
-) {
-    padding-top: var(--list-spacing) !important;
-    padding-bottom: var(--list-spacing);
-}
-
+/* remove bottom padding on no-bullet list elements */
 .markdown-source-view.mod-cm6 .HyperMD-list-line:not(.HyperMD-list-line-nobullet):has(+ .HyperMD-list-line-nobullet) {
     padding-bottom: 0px !important;
 }
 
-/* modify list elements with numbers */
-.markdown-source-view.mod-cm6 .HyperMD-list-line:has(.cm-formatting.cm-formatting-list .list-number) {
-    padding-top: var(--list-spacing) !important;
-    padding-bottom: var(--list-spacing);
-}
-
+/* add top padding to bulleted list element that follows a numbered list element */
 .markdown-source-view.mod-cm6 .HyperMD-list-line:has(.cm-formatting.cm-formatting-list .list-number) + .HyperMD-list-line:has(.cm-formatting.cm-formatting-list .list-bullet) {
-    margin-top: var(--p-spacing) !important;
+    padding-top: var(--p-spacing) !important;
 }
 
+/* add top padding to numbered list element that follows a bulleted list element */
 .markdown-source-view.mod-cm6 .HyperMD-list-line:has(.cm-formatting.cm-formatting-list .list-bullet) + .HyperMD-list-line:has(.cm-formatting.cm-formatting-list .list-number)  {
-    margin-top: var(--p-spacing) !important;
+    padding-top: var(--p-spacing) !important;
 }
 
 /* move bullet to the left */
@@ -298,21 +281,19 @@ div:is(
     transform: translateX(-0.2rem) !important;
 }
 
-/* move element holding list number */
-.markdown-source-view.mod-cm6 .HyperMD-list-line .cm-formatting.cm-formatting-list:has(.list-number)
-~ span {
-    display: inline-flex !important;
-    transform: translateX(-0.1675rem) !important;
+/* use a negative margin to drag the text closer to the numbers without breaking the text wrapping */
+.markdown-source-view.mod-cm6 .HyperMD-list-line .cm-formatting.cm-formatting-list:has(.list-number) {
+    margin-right: -2px !important;
 }
 
 /* move the list number */
 .markdown-source-view.mod-cm6 .HyperMD-list-line .cm-formatting.cm-formatting-list .list-number {
     display: inline-flex !important;
-    transform: translateX(-0.175rem) !important;
+    transform: translateX(-0.2rem) !important;
 }
 
-/* modify the read mode X position to match editor since it's impossible to do the other way round 
-   without breaking dotpoint lists */
+/* modify the read mode X position of numbered list to match editor since it's impossible to do the other way round.
+   This is because there is no way to determine if a nobullet list element is from a bulleted list or numbered list */
 div.el-ol > ol > li {
     transform: translateX(0.225rem) !important;
 }
