@@ -17,7 +17,7 @@ COPY --from=node /usr/local/bin /usr/local/bin
 # Install quartz
 ##############################################################
 
-ARG QUARTZ_VERSION=a201105442c3603a34cb609b70cef71072e71392
+ARG QUARTZ_VERSION=b397dae95113b0eaaf8054adf951fc533791bd0d
 
 WORKDIR /quartz
 
