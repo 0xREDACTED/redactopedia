@@ -24,11 +24,6 @@
 
 /* #region Headers */
 
-/* remove padding from editor headers */
-.markdown-source-view.mod-cm6 .HyperMD-header {
-    margin-top: 0 !important;
-}
-
 /* headers in the editor directly after text, code and images should have top padding */
 .markdown-source-view.mod-cm6 
 div:is(
@@ -55,9 +50,14 @@ div:is(
     padding-bottom: calc(var(--p-spacing)) !important;
 }
 
-/* apply different padding to bottom of every other header that has a non-header element after it*/
-.cm-content > div:not(:nth-child(2)).HyperMD-header:has(+ div.cm-line:not(.HyperMD-header)) {
+/* apply different padding to bottom of every other header (that isn't after a header) that has a non-header element after it*/
+.cm-content > :not(.HyperMD-header) + div:not(:nth-child(2)).HyperMD-header:has(+ div.cm-line:not(.HyperMD-header)) {
     padding-bottom: calc(var(--p-spacing) - var(--header-compensation)) !important;
+}
+
+/* apply different padding to bottom of every other header (that is after a header) that has a non-header element after it*/
+.cm-content > .HyperMD-header + div:not(:nth-child(2)).HyperMD-header:has(+ div.cm-line:not(.HyperMD-header)) {
+    padding-bottom: var(--p-spacing) !important;
 }
 
 /* fix header letter spacing */
@@ -154,6 +154,11 @@ div:is(
     padding-bottom: calc(var(--p-spacing) - 0.005rem) !important;
 }
 
+/* remove the top padding on headers following another header */
+.markdown-source-view.mod-cm6 .HyperMD-header + .HyperMD-header {
+    padding-top: 0;
+}
+
 /* adjust h1 bottom padding if it has another header after it (it's different to other headers) */
 .markdown-source-view.mod-cm6 :not(.HyperMD-header) + .HyperMD-header-1:has(+ .HyperMD-header) {
     padding-bottom: calc(var(--p-spacing) - 0.13rem) !important;
@@ -190,7 +195,29 @@ figcaption.header {
     font-size: var(--code-size) !important;
 }
 
-/* https://forum.obsidian.md/t/live-preview-better-support-of-code-blocks-in-lists/31352/44?u=mo0nman */
+/* indent code blocks under a list dotpoint */
+.markdown-source-view.mod-cm6 .HyperMD-list-line-1 + .cm-preview-code-block  {
+    transform: translateX(var(--list-indent-edit-mode));
+    width: calc(100% - var(--list-indent-edit-mode));
+
+    & pre code span {
+        display: inline-block;
+        transform: translateX(calc(-1 * var(--list-indent-edit-mode) + 5px));
+    }
+}
+
+/* indent code blocks under a list dotpoint at the second depth */
+.markdown-source-view.mod-cm6 .HyperMD-list-line-2 + .cm-preview-code-block  {
+    transform: translateX(calc(1.7 * var(--list-indent-edit-mode)));
+    width: calc(100% - 1.7 * var(--list-indent-edit-mode));
+
+    & pre code span {
+        display: inline-block;
+        transform: translateX(calc(-1.7 * var(--list-indent-edit-mode) + 5px));
+    }
+}
+
+/* no indentation support for further nesting since it's buggy */
 
 /* #endregion */
 

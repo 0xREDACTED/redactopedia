@@ -1,7 +1,7 @@
 [
   "OA-file-hider",
   "customjs",
-  "shiki-highlighter",
   "obsidian-style-settings",
-  "editor-width-slider"
+  "editor-width-slider",
+  "shiki-highlighter"
 ]
