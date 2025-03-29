@@ -42,7 +42,7 @@ To find the profile in use, run:
 ```sh
 pactl list sinks
 ```
-then find your audio device and take note of the value of `Active Port` at the bottom of it's details. For example:
+then find your audio device and take note `Active Port`'s value at the bottom of the sink's details. For example:
 ![[pactl-list-sink-active-port.png]]
 This port name will map to the ALSA configuration profile name. If you are on an older Ubuntu that uses `PulseAudio` run the following to edit the config:
 ```sh
