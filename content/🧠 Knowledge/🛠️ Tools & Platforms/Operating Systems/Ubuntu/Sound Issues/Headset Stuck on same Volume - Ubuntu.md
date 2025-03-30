@@ -44,7 +44,7 @@ pactl list sinks
 ```
 then find your audio device and take note `Active Port`'s value at the bottom of the sink's details. For example:
 ![[pactl-list-sink-active-port.png]]
-This port name will map to the ALSA configuration profile name. If you are on an older Ubuntu that uses `PulseAudio` run the following to edit the config:
+This port name will map to the ALSA configuration profile name. Given the value above, if you are on an older Ubuntu that uses `PulseAudio` run the following to edit the config:
 ```sh
 sudo nano /usr/share/pulseaudio/alsa-mixer/paths/analog-output-headphones.conf
 ```

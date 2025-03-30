@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/🧠 Knowledge/🛠️ Tools & Platforms/Operating Systems/Ubuntu/Sound Issues/Headset Stuck on same Volume - Ubuntu.md",
+                "file": "content/🧠 Knowledge/🛠️ Tools & Platforms/CLI Tools/git/File Timestamps.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Headset Stuck on same Volume - Ubuntu"
+              "title": "File Timestamps"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/🧠 Knowledge/🛠️ Tools & Platforms/Operating Systems/Ubuntu/Sound Issues/Headset Stuck on same Volume - Ubuntu.md",
+                "file": "content/🧠 Knowledge/🛠️ Tools & Platforms/CLI Tools/git/File Timestamps.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Headset Stuck on same Volume - Ubuntu"
+              "title": "Outline of File Timestamps"
             }
           }
         ],
@@ -169,6 +169,8 @@
   },
   "active": "393b5461e55d72de",
   "lastOpenFiles": [
+    "content/🧠 Knowledge/🛠️ Tools & Platforms/CLI Tools/git/Git Commit History.md",
+    "content/🧠 Knowledge/🛠️ Tools & Platforms/CLI Tools/git/File Timestamps.md",
     "content/🧠 Knowledge/🛠️ Tools & Platforms/Secret Management/HashiCorp Vault/Auth Methods.md",
     "content/🧠 Knowledge/🛠️ Tools & Platforms/Operating Systems/Dual Booting.md",
     "content/🧠 Knowledge/🛠️ Tools & Platforms/Operating Systems/Ubuntu/Sound Issues/Headset Stuck on same Volume - Ubuntu.md",
@@ -201,7 +203,6 @@
     "util/path.ts",
     "util",
     "content/🧠 Knowledge/🧑🏼‍💻 Programming/Languages/C++/Compilation Process.md",
-    "content/🧠 Knowledge/🛠️ Tools & Platforms/CLI Tools/git/Git Commit History.md",
     "content/🧠 Knowledge/🧑🏼‍💻 Programming/Languages/Java/Frameworks/Java Springboot/Java Springboot Project Layout.md",
     "GitLab CI.md",
     "content/🧠 Knowledge/🛠️ Tools & Platforms/CICD/GitLab CI.md",
