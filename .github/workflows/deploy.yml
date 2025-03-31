@@ -35,6 +35,21 @@ jobs:
         with:
           fetch-depth: 0 # Fetch all history for git info
 
+      # quartz uses file modification dates for last edited
+      # date on each page. Use the git added date as the file ts
+      - name: Set file timestamps
+        run: >-
+          content=$(git ls-files content)
+          for file in "$content"; do
+            time="$(git log --pretty=format:%cd -n 1 \
+                  --date=format:%Y%m%d%H%M.%S --date-order -- "$file")"
+            if [ -z "$time" ]; then
+              echo "ERROR: skipping '$file' -- no git log found" >&2
+              continue
+            fi
+            touch -m -t "$time" "$file"
+          done 
+
       - name: Setup Docker Buildx
         uses: docker/setup-buildx-action@v3
 
