@@ -38,7 +38,7 @@ jobs:
       # quartz uses file modification dates for last edited
       # date on each page. Use the git added date as the file ts
       - name: Set file timestamps
-        run: >-
+        run: |
           content=$(git ls-files content)
           for file in "$content"; do
             time="$(git log --pretty=format:%cd -n 1 \
