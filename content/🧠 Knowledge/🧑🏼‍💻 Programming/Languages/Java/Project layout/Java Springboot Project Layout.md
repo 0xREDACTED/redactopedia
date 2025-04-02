@@ -95,7 +95,7 @@ public class UserDto {
 	@Schema(description = "The ID of the user", example = "3")
 	private Long id;
 
-	@Schema(description = "The user's name", example = "0xREDACTED")
+	@Schema(description = "The user's name", example = "REDACTED")
 	private String name;
 
 	@Schema(description = "the user's email", example = "redacted@example.com")
