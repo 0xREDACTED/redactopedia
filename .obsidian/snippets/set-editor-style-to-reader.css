@@ -241,6 +241,15 @@ blockquote {
     padding-left: calc(var(--size-4-6) - var(--transparent-span-width, 0px));
 }
 
+/* handle bold or italic elements */
+.HyperMD-quote .cm-formatting-quote
+    + img.cm-widgetBuffer 
+    + span[contenteditable="false"] 
+    + img.cm-widgetBuffer 
+    + span.cm-quote:not(.cm-inline-code) {
+        padding-left: calc(var(--size-4-6) - var(--transparent-span-width, 0px));
+}
+
 /* Reset padding for subsequent .cm-quote spans */
 .HyperMD-quote span.cm-quote:not(.cm-formatting-quote, .cm-inline-code) {
     padding-left: 0;
