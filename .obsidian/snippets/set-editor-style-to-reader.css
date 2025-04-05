@@ -296,16 +296,6 @@ blockquote {
     padding-bottom: 0px !important;
 }
 
-/* add top padding to bulleted list element that follows a numbered list element */
-.markdown-source-view.mod-cm6 .HyperMD-list-line:has(.cm-formatting.cm-formatting-list .list-number) + .HyperMD-list-line:has(.cm-formatting.cm-formatting-list .list-bullet) {
-    padding-top: var(--p-spacing) !important;
-}
-
-/* add top padding to numbered list element that follows a bulleted list element */
-.markdown-source-view.mod-cm6 .HyperMD-list-line:has(.cm-formatting.cm-formatting-list .list-bullet) + .HyperMD-list-line:has(.cm-formatting.cm-formatting-list .list-number)  {
-    padding-top: var(--p-spacing) !important;
-}
-
 /* move bullet to the left */
 .cm-formatting.cm-formatting-list .list-bullet {
     transform: translateX(-0.23rem);
